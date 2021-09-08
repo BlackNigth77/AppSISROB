@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AppSISROB</string>
+    <string name="app_name">SISROB</string>
+    <string name="menu_Pop1">EQUIPOS</string>
+    <string name="menu_Pop2"> VIDEOS</string>
+    <string name="menu_Pop3"> NOTICIAS</string>
+    <string name="menu_Pop4"> REGISTRO DE FALLAS</string>
+    <string name="menu_Pop5"> SOLICITUD DE REPUESTOS</string>
+    <string name="menu_Pop6"> CERRAR SESION</string>
+    <string name="opciones">OPCIONES</string>
+    <string name="bienvenido_a">Bienvenido(a):</string>
 </resources>
