@@ -8,4 +8,8 @@
     <string name="menu_Pop6"> CERRAR SESION</string>
     <string name="opciones">OPCIONES</string>
     <string name="bienvenido_a">Bienvenido(a):</string>
+    <string name="menu_Eqop1">MIXER</string>
+    <string name="menu_Eqop2"> ROBOT</string>
+    <string name="menu_Eqop3"> CARGADOR FRONTAL</string>
+    <string name="menu_Eqop4"> CAMIONES/BUSES</string>
 </resources>

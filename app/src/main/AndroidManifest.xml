@@ -11,7 +11,8 @@
         android:theme="@style/Theme.AppSISROB">
         <activity
             android:name=".MenuEquipos"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppSISROBDet"/>
         <activity
             android:name=".InicioActivity"
             android:exported="true"

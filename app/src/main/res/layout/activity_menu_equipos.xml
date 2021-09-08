@@ -6,4 +6,145 @@
     android:layout_height="match_parent"
     tools:context=".MenuEquipos">
 
+
+    <TextView
+        android:id="@+id/txtMenEq"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="@string/menu_Pop1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUsuarioMnEq"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/arimo"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/bienvenido_a"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenEq" />
+
+    <ImageView
+        android:id="@+id/imgMenEqOp1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@color/principal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioMnEq"
+        app:srcCompat="@drawable/ic_equipos"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/txtMixer"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:gravity="left|center_vertical"
+        android:padding="20dp"
+        android:text="@string/menu_Eqop1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgMenEqOp1"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioMnEq" />
+
+
+    <ImageView
+        android:id="@+id/imgMenEqOp2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMenEqOp1"
+        app:srcCompat="@drawable/ic_robot"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/txtRobot"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="@string/menu_Eqop2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMenEqOp2"
+        app:layout_constraintTop_toBottomOf="@+id/txtMixer" />
+
+    <ImageView
+        android:id="@+id/imgMenEqOp3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMenEqOp2"
+        app:srcCompat="@drawable/ic_cargador"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/txtCargador"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="@string/menu_Eqop3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMenEqOp3"
+        app:layout_constraintTop_toBottomOf="@+id/txtRobot" />
+
+
+    <ImageView
+        android:id="@+id/imgMenEqOp4"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMenEqOp3"
+        app:srcCompat="@drawable/ic_camion"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/txtCamion"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="@string/menu_Eqop4"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMenEqOp4"
+        app:layout_constraintTop_toBottomOf="@+id/txtCargador" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

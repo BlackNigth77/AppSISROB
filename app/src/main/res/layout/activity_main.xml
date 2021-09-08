@@ -88,7 +88,7 @@
         android:contentDescription="TODO" />
 
     <TextView
-        android:id="@+id/txtEquipos"
+        android:id="@+id/txtEquipo"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:background="@color/principal"
@@ -117,7 +117,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgMenOp2"
-        app:layout_constraintTop_toBottomOf="@+id/txtEquipos" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEquipo" />
 
     <TextView
         android:id="@+id/txtNoticias"
