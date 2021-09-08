@@ -12,4 +12,16 @@
     <string name="menu_Eqop2"> ROBOT</string>
     <string name="menu_Eqop3"> CARGADOR FRONTAL</string>
     <string name="menu_Eqop4"> CAMIONES/BUSES</string>
+    <string name="usuario"> Usuario</string>
+    <string name="psw"> Contraseña</string>
+    <string name="btnIngresar"> Ingresar</string>
+    <string name="olvide_contraseña"> ¿Has olvidado tu contraseña?</string>
+    <string name="recupera">RECUPERAR CONTRASEÑA</string>
+    <string name="recupera_text1">Por favor, introduce tu correo electronico</string>
+    <string name="recupera_text2">Volver a Inicio de Sesion</string>
+    <string name="valrecup_text1">CORREO DE RECUPERACION</string>
+    <string name="valrecup_text2">DE CONTRASEÑA ENVIADO</string>
+    <string name="valrecup_text3">Siga las Instrucciones para restablecer</string>
+    <string name="valrecup_text4">su contraseña</string>
+    <string name="btnIniciarSesion"> INICIAR SESION</string>
 </resources>

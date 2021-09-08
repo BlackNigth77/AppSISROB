@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSISROB">
         <activity
+            android:name=".ValRecupPswActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppSISROB"/>
+        <activity
+            android:name=".RecuperaPswActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppSISROB" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppSISROB" />
+        <activity
             android:name=".MenuEquipos"
             android:exported="true"
-            android:theme="@style/Theme.AppSISROBDet"/>
+            android:theme="@style/Theme.AppSISROBDet" />
         <activity
             android:name=".InicioActivity"
             android:exported="true"
@@ -26,7 +38,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppSISROBDet"></activity>
+            android:theme="@style/Theme.AppSISROBDet" />
 
         <meta-data
             android:name="preloaded_fonts"

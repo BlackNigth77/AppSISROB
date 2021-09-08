@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperaPswActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo1Recup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:paddingTop="20dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitulo2Recup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:fontFamily="@font/arimo"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/recupera"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo1Recup" />
+
+    <TextView
+        android:id="@+id/lblRecuperaT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/recupera_text1"
+        android:textColor="@color/principal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo2Recup" />
+
+    <EditText
+        android:id="@+id/txtCorreoUsu"
+        android:layout_width="339dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/custom_focus_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRecuperaT1" />
+
+    <Button
+        android:id="@+id/btnRecuperar"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/arimo"
+        android:text="RECUPERAR"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoUsu" />
+
+    <TextView
+        android:id="@+id/lblRecuperaT2"
+        android:layout_width="192dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/recupera_text2"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="14sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecuperar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValRecupPswActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo1ValRecup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:paddingTop="20dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitulo2ValRecup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:fontFamily="@font/arimo"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/recupera"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo1ValRecup" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo2ValRecup"
+        app:srcCompat="@drawable/ic_va_recupera" />
+
+    <TextView
+        android:id="@+id/txtValRecup1"
+        android:layout_width="312dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/valrecup_text1"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtValRecup2"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/valrecup_text2"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValRecup1" />
+
+    <TextView
+        android:id="@+id/txtValRecup3"
+        android:layout_width="339dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/valrecup_text3"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValRecup2" />
+
+    <TextView
+        android:id="@+id/txtValRecup4"
+        android:layout_width="339dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/valrecup_text4"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValRecup3" />
+
+    <Button
+        android:id="@+id/btnInicioSes"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/arimo"
+        android:text="@string/btnIniciarSesion"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValRecup4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtTituloLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/principal"
+        android:fontFamily="@font/arimo"
+        android:paddingTop="20dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="173dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloLogin"
+        app:srcCompat="@drawable/logo_empresa" />
+
+    <EditText
+        android:id="@+id/txtUsuLogin"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:drawableStart="@drawable/custom_focus_usr"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <EditText
+        android:id="@+id/txtPswLogin"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/custom_focus_psw"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="@string/psw"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuLogin" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/arimo"
+        android:text="@string/btnIngresar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPswLogin" />
+
+    <TextView
+        android:id="@+id/txtOlvidoPsw"
+        android:layout_width="227dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arimo"
+        android:text="@string/olvide_contraseña"
+        android:textAlignment="center"
+        android:textColor="@color/principal"
+        android:textSize="14sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
+        app:layout_constraintVertical_bias="0.119" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
