@@ -10,9 +10,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSISROB">
         <activity
+            android:name=".ActivityFiltroEquipos"
+            android:exported="true"
+            android:label="SISROB: Menu"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppSISROBDet"
+            />
+        <activity
+            android:name=".RepuestosActivity"
+            android:exported="true"
+            android:label="SISROB: Listado"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
+            android:name=".FallasActivity"
+            android:exported="true"
+            android:label="SISROB: Listado"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
+            android:name=".NoticiasActivity"
+            android:exported="true"
+            android:label="SISROB: Listado"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
+            android:name=".VideosActivity"
+            android:exported="true"
+            android:label="SISROB: Listado"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
             android:name=".ValRecupPswActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppSISROB"/>
+            android:theme="@style/Theme.AppSISROB" />
         <activity
             android:name=".RecuperaPswActivity"
             android:exported="true"
@@ -24,6 +55,8 @@
         <activity
             android:name=".MenuEquipos"
             android:exported="true"
+            android:label="SISROB: Menu"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppSISROBDet" />
         <activity
             android:name=".InicioActivity"

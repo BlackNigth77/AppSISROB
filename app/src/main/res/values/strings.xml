@@ -15,13 +15,20 @@
     <string name="usuario"> Usuario</string>
     <string name="psw"> Contraseña</string>
     <string name="btnIngresar"> Ingresar</string>
-    <string name="olvide_contraseña"> ¿Has olvidado tu contraseña?</string>
+    <string name="olvide_contraseña"><u>¿Has olvidado tu contraseña?</u></string>
     <string name="recupera">RECUPERAR CONTRASEÑA</string>
     <string name="recupera_text1">Por favor, introduce tu correo electronico</string>
-    <string name="recupera_text2">Volver a Inicio de Sesion</string>
+    <string name="recupera_text2"><u>Volver al inicio de sesion</u></string>
     <string name="valrecup_text1">CORREO DE RECUPERACION</string>
     <string name="valrecup_text2">DE CONTRASEÑA ENVIADO</string>
     <string name="valrecup_text3">Siga las Instrucciones para restablecer</string>
     <string name="valrecup_text4">su contraseña</string>
     <string name="btnIniciarSesion"> INICIAR SESION</string>
+    <string name="titulo_videos"> VIDEOS</string>
+    <string name="titulo_noticias">NOTICIAS</string>
+    <string name="titulo_fallas">REGISTRO DE FALLAS</string>
+    <string name="titulo_repuestos">SOLICITUD DE REPUESTOS</string>
+    <string name="titulo_lista_video">Titulo de Video</string>
+    <string name="titulo_filtro_eq">FILTRO EQUIPOS</string>
+
 </resources>

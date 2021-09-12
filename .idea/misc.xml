@@ -18,12 +18,17 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_usuario.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_usuario_prin.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_va_recupera.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_inicio.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_menu_equipos.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_recupera_psw.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_repuestos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

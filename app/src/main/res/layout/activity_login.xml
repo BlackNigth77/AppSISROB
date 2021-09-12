@@ -44,7 +44,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/txtPswLogin"
@@ -60,7 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsuLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuLogin"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnIngresar"
@@ -73,7 +75,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPswLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPswLogin"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtOlvidoPsw"
@@ -83,6 +86,7 @@
         android:fontFamily="@font/arimo"
         android:text="@string/olvide_contraseña"
         android:textAlignment="center"
+        android:autoLink="phone"
         android:textColor="@color/principal"
         android:textSize="14sp"
         android:textStyle="normal|italic"
@@ -90,6 +94,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
