@@ -10,12 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSISROB">
         <activity
+            android:name=".DetalleEquipoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarEquipoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroFallasActivity"
+            android:exported="true"
+            android:label="SISROB: Mantenimiento"
+            android:parentActivityName=".FallasActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
+            android:name=".RegistrarNoticiasActivity"
+            android:exported="true"
+            android:label="SISROB: Mantenimiento"
+            android:parentActivityName=".NoticiasActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
+            android:name=".RegistrarVideosActivity"
+            android:exported="true"
+            android:label="SISROB: Mantenimiento"
+            android:parentActivityName=".VideosActivity"
+            android:theme="@style/Theme.AppSISROBDet" />
+        <activity
             android:name=".ActivityFiltroEquipos"
             android:exported="true"
             android:label="SISROB: Menu"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppSISROBDet"
-            />
+            android:parentActivityName=".MenuEquipos"
+            android:theme="@style/Theme.AppSISROBDet" />
         <activity
             android:name=".RepuestosActivity"
             android:exported="true"

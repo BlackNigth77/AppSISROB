@@ -3,29 +3,80 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable-v24/ic_add_lista.xml" value="0.2203125" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_buttom.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_capacidad.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_detnoticia.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_duracion_video.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_email.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_equipofalla.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_fecha_noticia.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_fotofalla.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_marca.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_modelo.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_psw.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_ruta_videos.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_sistema.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_tipofalla.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_titulo_noticia.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_titulo_video.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_ubicacion.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_unidad.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_usr.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_imput.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_baseline_agriculture_24.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_capacidad_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_detalle_text_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_duracion_video.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_duracion_video_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_elec_ecuecm.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_email.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_email_prin.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_equipo_bl.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_equipo_default.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_falla.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_falla_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_fecha_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_foto_falla_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_ico_detequ_componenetes.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_marca.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_marca_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_modelo_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_motor.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_psw.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_psw_prin.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_ruta_video_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_save.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_sistema.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_sistema_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_titulo_noticias.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_titulo_noticias_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_titulo_video_bl.xml" value="0.2203125" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_ubicacion_bl.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_uidad_minera_bl.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_usuario.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_usuario_prin.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_va_recupera.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ico_detequ_descripcion.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_detalle_equipo.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_fallas.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_inicio.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_menu_equipos.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_noticias.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_recupera_psw.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registrar_equipo.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registrar_noticias.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registrar_videos.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registro_fallas.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_repuestos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.20416666666666666" />

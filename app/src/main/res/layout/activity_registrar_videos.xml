@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarVideosActivity">
+
+    <TextView
+        android:id="@+id/lblTituloGenVideo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="REGISTRAR VIDEO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lblTituloVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Titulo"
+        android:textColor="@color/principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloGenVideo" />
+
+    <EditText
+        android:id="@+id/txtTituloVideo"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_imput"
+        android:drawableStart="@drawable/custom_focus_titulo_video"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="Ingrese titulo del video"
+        android:inputType="textPersonName"
+        android:minHeight="54dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloVideo" />
+
+    <TextView
+        android:id="@+id/lblDuracionVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Duracion (min)"
+        android:textColor="@color/principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloVideo" />
+
+    <EditText
+        android:id="@+id/txtDuracionVideo"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_imput"
+        android:drawableStart="@drawable/custom_focus_duracion_video"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="Ingrese la duracion del video"
+        android:inputType="number"
+        android:minHeight="54dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDuracionVideo" />
+
+    <TextView
+        android:id="@+id/lblRutaVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Ruta"
+        android:textColor="@color/principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDuracionVideo" />
+
+    <EditText
+        android:id="@+id/txtRutaVideo"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_imput"
+        android:drawableStart="@drawable/custom_focus_ruta_videos"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/arimo"
+        android:hint="Ingrese ruta del video"
+        android:inputType="textPersonName"
+        android:minHeight="54dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRutaVideo" />
+
+    <Button
+        android:id="@+id/btnGrabarVideo"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_buttom"
+        android:drawableStart="@drawable/ic_save"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/arimo"
+        android:paddingHorizontal="15dp"
+        android:text="GRABAR VIDEO"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRutaVideo"
+        app:layout_constraintVertical_bias="0.225" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,5 +30,8 @@
     <string name="titulo_repuestos">SOLICITUD DE REPUESTOS</string>
     <string name="titulo_lista_video">Titulo de Video</string>
     <string name="titulo_filtro_eq">FILTRO EQUIPOS</string>
+    <string name="registrar_videos">Registrar Videos</string>
+    <string name="grabar_video">GRABAR VIDEO</string>
+    <string name="grabar_equipo">GRABAR EQUIPO</string>
 
 </resources>

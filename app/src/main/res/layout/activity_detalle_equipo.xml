@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleEquipoActivity">
+
+    <TextView
+        android:id="@+id/lblEquipoElegido"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="EQUIPO SELECCIONADO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTituloDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="DETALLE DEL EQUIPO"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEquipoElegido" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp1"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloDetalle"
+        app:srcCompat="@drawable/ico_detequ_descripcion" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp2"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintStart_toEndOf="@+id/DetEquipOp1"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloDetalle"
+        app:srcCompat="@drawable/ic_ico_detequ_tablero" />
+
+    <TextView
+        android:id="@+id/txtDetEquipOp1"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="MANUAL GENERAL"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp1" />
+
+    <TextView
+        android:id="@+id/txtDetEquipOp4"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="LISTA DE PARTES"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp4" />
+
+    <TextView
+        android:id="@+id/txtDetEquipOp2"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="62dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="TABLERO DE MANDO"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/txtDetEquipOp1"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp2" />
+
+    <TextView
+        android:id="@+id/txtDetEquipOp3"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="COMPONENTES"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toEndOf="@+id/txtDetEquipOp2"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp3" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp3"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/DetEquipOp2"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloDetalle"
+        app:srcCompat="@drawable/ic_ico_detequ_componenetes" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp4"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetEquipOp1"
+        app:srcCompat="@drawable/ic_listadepartes" />
+
+
+    <TextView
+        android:id="@+id/lblTituloDetalle2"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="DETALLE DE FLOTA"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetEquipOp4" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp5"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloDetalle2"
+        app:srcCompat="@drawable/ic_baseline_agriculture_24" />
+
+
+    <TextView
+        android:id="@+id/txtDetEquipOp5"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="308dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="FLOTA POR UM"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp5" />
+
+    <TextView
+        android:id="@+id/lblTituloDetalle3"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="@font/arimo"
+        android:gravity="center"
+        android:text="DETALLE DE REPUESTOS"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetEquipOp5" />
+
+    <ImageView
+        android:id="@+id/DetEquipOp6"
+        android:layout_width="69dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_imput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloDetalle3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_elec_ecuecm" />
+
+    <TextView
+        android:id="@+id/txtDetEquipOp6"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="308dp"
+        android:background="@drawable/custom_buttom"
+        android:gravity="center"
+        android:text="STOCK ACTUAL"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetEquipOp6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
