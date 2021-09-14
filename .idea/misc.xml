@@ -77,9 +77,11 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_repuestos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_visor_video.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -88,5 +90,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.20416666666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>

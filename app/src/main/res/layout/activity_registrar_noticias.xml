@@ -63,12 +63,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/abril_fatface"
+        android:inputType="textPersonName"
         android:text="Fecha"
         android:textColor="@color/principal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloNoticias" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloNoticias"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/txtFechaNoticias"
@@ -82,7 +84,7 @@
         android:ems="10"
         android:fontFamily="@font/arimo"
         android:hint="Ingrese fecha de la noticia"
-        android:inputType="date"
+        android:inputType="text"
         android:minHeight="54dp"
         android:paddingStart="10dp"
         android:textSize="14sp"
@@ -126,7 +128,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/btnGrabarVideo"
+        android:id="@+id/btnGrabarNoticia"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"

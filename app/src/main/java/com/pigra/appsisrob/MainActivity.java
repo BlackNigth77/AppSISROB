@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         txtMenuPrinOp1 = findViewById(R.id.txtEquipo);
         ImgPrinOp1 = findViewById(R.id.imgMenOp1);
 
-        txtMenuPrinOp2 = findViewById(R.id.txtVideos);
+        txtMenuPrinOp2 = findViewById(R.id.lglTituloYoutube);
         ImgPrinOp2 = findViewById(R.id.imgMenOp2);
 
         txtMenuPrinOp3 = findViewById(R.id.txtNoticias);
