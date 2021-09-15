@@ -12,7 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
      Button btnIngresar;
      TextView lblOlvidoPsw;
-
+    TextView lblOlvidoPsw2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
