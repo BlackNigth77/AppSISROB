@@ -3,25 +3,29 @@ package com.pigra.appsisrob;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.pigra.appsisrob.entidades.Noticia;
+import com.pigra.appsisrob.fragmets.DatePickerFragment;
 import com.pigra.appsisrob.modelo.DAONoticia;
 
 
 
-public class RegistrarNoticiasActivity extends AppCompatActivity {
+public class RegistrarNoticiasActivity extends AppCompatActivity implements View.OnClickListener{
 
     TextView lblTituloGenVideo;
     EditText txtTituloNoticias, txtFechaNoticias, txtDetalleNoticia;
     Button btnGrabarNoticia;
     Noticia noticia;
+
 
     String titulo, fecha, detalle;
     int  id;
@@ -37,6 +41,9 @@ public class RegistrarNoticiasActivity extends AppCompatActivity {
         daoNoticia.abrirBD();
         asignarReferencias();
         verificarEdicion();
+        txtFechaNoticias = (EditText) findViewById(R.id.txtFechaNoticias);
+        txtFechaNoticias.setOnClickListener(this);
+
     }
 
     private void asignarReferencias() {
@@ -97,6 +104,30 @@ public class RegistrarNoticiasActivity extends AppCompatActivity {
         });
         ventana.create().show();
     }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.txtFechaNoticias:
+                showDatePickerDialog();
+                break;
+        }
+    }
+
+    private void showDatePickerDialog() {
+        DatePickerFragment newFragment = DatePickerFragment.newInstance(new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                // +1 because January is zero
+                final String selectedDate = day + " / " + (month+1) + " / " + year;
+                txtFechaNoticias.setText(selectedDate);
+            }
+        });
+
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
 
 
     private boolean capturarDatos() {

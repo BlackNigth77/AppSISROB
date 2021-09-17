@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pigra.appsisrob.entidades.Noticia;
 import com.pigra.appsisrob.entidades.Video;
+import com.pigra.appsisrob.fragmets.DatePickerFragment;
 import com.pigra.appsisrob.modelo.DAONoticia;
 import com.pigra.appsisrob.modelo.DAOVideo;
 
@@ -19,6 +23,7 @@ import java.util.List;
 
 public class NoticiasActivity extends AppCompatActivity {
     String variable;
+
 
     FloatingActionButton btnAgregarNoticia;
 
@@ -36,6 +41,7 @@ public class NoticiasActivity extends AppCompatActivity {
         asignarReferencias();
         daoNoticia.abrirBD();
         mostrarVideos();
+
     }
 
     private void mostrarVideos(){
@@ -59,6 +65,7 @@ public class NoticiasActivity extends AppCompatActivity {
         });
 
     }
+
 
 
 }
