@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="principal">#1A237E</color>
+    <color name="princilap_dark">#0D113C</color>
     <color name="listados_back">#8D947F</color>
 </resources>

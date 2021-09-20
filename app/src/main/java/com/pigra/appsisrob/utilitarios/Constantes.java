@@ -8,8 +8,6 @@ public class Constantes {
     public static final String NOMBRE_TABLA3 = "reporte_fallas";
     public static final String NOMBRE_TABLA4= "solicitud_repuestos";
     public static final String NOMBRE_TABLA5= "equipos";
-    public static final int VERSION = 1;
+    public static final int VERSION = 2;
 
     }
-
-

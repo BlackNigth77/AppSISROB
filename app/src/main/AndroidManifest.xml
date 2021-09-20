@@ -14,15 +14,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppSISROB">
-
+        android:theme="@style/Theme.AppSISROB" >
+        <activity
+            android:name=".RegistroSolicitud"
+            android:exported="true"
+            android:label="SISROB: Mantenimiento"
+            android:parentActivityName=".RepuestosActivity"
+            android:theme="@style/Theme.AppSISROBDet"
+            />
         <activity
             android:name=".VisorVideoActivity"
             android:exported="true"
             android:label="SISROB: Visor"
             android:parentActivityName=".VisorVideoActivity"
-            android:theme="@style/Theme.AppSISROBDet"/>
-
+            android:theme="@style/Theme.AppSISROBDet" />
         <activity
             android:name=".DetalleEquipoActivity"
             android:exported="true" />

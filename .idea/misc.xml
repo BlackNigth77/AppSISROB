@@ -82,7 +82,38 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.25" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/bg_boton_degradado.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_buttom.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_focus_capacidad.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_focus_fecha_noticia.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_focus_modelo.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_focus_number.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_imput.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_equipo_bl.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_falla_bl.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_fecha.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_foto_falla.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_ico_detequ_componenetes.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_ico_detequ_tablero.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_ir.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_marca_bl.xml" value="0.38333333333333336" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/ic_number_bl.xml" value="0.38333333333333336" />
         <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_detalle_equipo.xml" value="0.36666666666666664" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_registrar_noticias.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_registrar_solicitud_repuesto.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_registrar_videos.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_registro_fallas.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_registro_solicitud.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_repuestos.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/activity_visor_video.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.3333333333333333" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/fila_solicitud_repuesto.xml" value="0.3671875" />
+        <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.3671875" />
       </map>
     </option>
   </component>

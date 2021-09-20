@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "920548571940",
+    "project_id": "autsisrob",
+    "storage_bucket": "autsisrob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920548571940:android:7e83bd613ecd5ba99cd1b1",
+        "android_client_info": {
+          "package_name": "com.pigra.appsisrob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920548571940-o1i74pl8onno3el02u5br6e6elvclu3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pigra.appsisrob",
+            "certificate_hash": "ebe98d3bd7536b7337a8b9637447a2f80be40bb4"
+          }
+        },
+        {
+          "client_id": "920548571940-7462erlh2bv9ri6189eoasbis6mtmm8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzTZWexLe3z0HhIlfUV32e0XkCkWpwIj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920548571940-7462erlh2bv9ri6189eoasbis6mtmm8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
