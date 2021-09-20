@@ -1,11 +1,9 @@
 package com.pigra.appsisrob.entidades;
 
 
-import java.util.Date;
-
 public class ReporteFalla {
 
-    private int id;
+    private String id;
     private String fecha;
     private String unidad_minera;
     private String equipo;
@@ -15,38 +13,11 @@ public class ReporteFalla {
     private String foto;
     private String ubicacion;
 
-    public ReporteFalla(int anInt, String string, String cursorString, String tipo, String sistema, String observacion, String foto, String ubicacion){}
-
-    public ReporteFalla (String fecha, String unidad_minera, String equipo, String tipo,String sistema,String observacion,String foto ,String ubicacion  ) {
-        this.fecha = fecha;
-        this.unidad_minera = unidad_minera;
-        this.equipo = equipo;
-        this.tipo = tipo;
-        this.sistema = sistema;
-        this.observacion = observacion;
-        this.foto = foto;
-        this.ubicacion = ubicacion;
-    }
-
-    public ReporteFalla (int id, String fecha, String unidad_minera, String equipo, String tipo,String sistema,String observacion,String foto ,String ubicacion  ) {
-        this.id = id;
-        this.fecha = fecha;
-        this.unidad_minera = unidad_minera;
-        this.equipo = equipo;
-        this.tipo = tipo;
-        this.sistema = sistema;
-        this.observacion = observacion;
-        this.foto = foto;
-        this.ubicacion = ubicacion;
-    }
-
-
-
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -7,8 +7,8 @@
     android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="20dp"
             tools:context=".RegistroFallasActivity">
 
@@ -22,7 +22,7 @@
                     android:gravity="center"
                     android:text="REGISTRAR REPORTE DE FALLAS"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +36,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Fecha"
+                    android:inputType="date"
                     android:textColor="@color/principal"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -116,12 +117,28 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtUnidadMinera" />
 
-                <EditText
-                    android:id="@+id/txtEquipoFalla"
-                    android:layout_width="340dp"
-                    android:layout_height="37dp"
+                <Spinner
+                    android:id="@+id/spinnerEquipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.086"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblEquipos"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/txtEquipoFalla"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/custom_imput"
                     android:drawableStart="@drawable/custom_focus_equipofalla"
@@ -133,9 +150,9 @@
                     android:paddingStart="10dp"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintHorizontal_bias="0.571"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEquipos"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerEquipo"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
@@ -155,7 +172,7 @@
 
                 <EditText
                     android:id="@+id/txtTipoFalla"
-                    android:layout_width="340dp"
+                    android:layout_width="match_parent"
                     android:layout_height="37dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
@@ -191,7 +208,7 @@
 
                 <EditText
                     android:id="@+id/txtSistemaFalla"
-                    android:layout_width="340dp"
+                    android:layout_width="match_parent"
                     android:layout_height="37dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
@@ -227,7 +244,7 @@
 
                 <EditText
                     android:id="@+id/txtObservacionFalla"
-                    android:layout_width="340dp"
+                    android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
@@ -261,32 +278,60 @@
 
                 <EditText
                     android:id="@+id/txtFotoFalla"
-                    android:layout_width="340dp"
-                    android:layout_height="37dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/custom_imput"
-                    android:drawableStart="@drawable/custom_focus_fotofalla"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:fontFamily="@font/arimo"
-                    android:hint="Fotografia de la Falla"
-                    android:inputType="textPersonName"
+                    android:gravity="start|top"
+                    android:hint="Ingrese Foto"
+                    android:inputType="textMultiLine"
                     android:paddingStart="10dp"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblFotoFalla"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:layout_constraintTop_toBottomOf="@+id/lblFotoFalla" />
+
+                <Button
+                    android:id="@+id/btnFotoFalla"
+                    android:layout_width="206dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_buttom"
+                    android:drawableStart="@drawable/custom_agregarfotofalla"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arimo"
+                    android:onClick="onclick"
+                    android:paddingHorizontal="20dp"
+                    android:text="Subir falla"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtFotoFalla" />
+
+
+                <ImageView
+                    android:id="@+id/idFotofalla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnFotoFalla"
+                    tools:ignore="ImageContrastCheck"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="TODO" />
 
                 <TextView
                     android:id="@+id/lblUbicacionEquipo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Ubicacion del Equipo"
                     android:textColor="@color/principal"
@@ -294,11 +339,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtFotoFalla" />
+                    app:layout_constraintTop_toBottomOf="@+id/idFotofalla" />
 
                 <EditText
                     android:id="@+id/txtUbicacionFalla"
-                    android:layout_width="340dp"
+                    android:layout_width="match_parent"
                     android:layout_height="37dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
@@ -334,10 +379,10 @@
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintHorizontal_bias="0.496"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtUbicacionFalla"
-                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintVertical_bias="0.2"
                     tools:ignore="TouchTargetSizeCheck" />
 
 

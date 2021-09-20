@@ -8,17 +8,24 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView txtMenuPrinOp1,txtMenuPrinOp6 ,txtMenuPrinOp2 ,txtMenuPrinOp3,txtMenuPrinOp4,txtMenuPrinOp5;
     ImageView ImgPrinOp1,ImgPrinOp6,ImgPrinOp2,ImgPrinOp3,ImgPrinOp4,ImgPrinOp5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         asignarReferencias();
+
     }
+
 
     private void asignarReferencias() {
 

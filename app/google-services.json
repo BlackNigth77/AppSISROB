@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "749476590540",
+    "firebase_url": "https://fir-appsisrob-default-rtdb.firebaseio.com",
+    "project_id": "fir-appsisrob",
+    "storage_bucket": "fir-appsisrob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749476590540:android:74a7914ae146293b75e369",
+        "android_client_info": {
+          "package_name": "com.pigra.appsisrob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749476590540-h20tm0oqtk5n6cbumjie16m5i52hrgh8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pigra.appsisrob",
+            "certificate_hash": "1db698db8ac8fcbba92a00e25b6fef1375c3fbc5"
+          }
+        },
+        {
+          "client_id": "749476590540-qhfon7hcje6mae65n68eoevcds3cmakb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhKCVv5SHbPELbY8kIn042zBrouFjtiWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749476590540-qhfon7hcje6mae65n68eoevcds3cmakb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
