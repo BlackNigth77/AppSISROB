@@ -33,5 +33,7 @@
     <string name="registrar_videos">Registrar Videos</string>
     <string name="grabar_video">GRABAR VIDEO</string>
     <string name="grabar_equipo">GRABAR EQUIPO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

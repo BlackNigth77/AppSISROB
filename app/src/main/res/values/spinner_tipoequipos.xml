@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_tipoequipos">
+        <item>Seleccione tipo de Equipo</item>
+        <item>Mixer</item>
+        <item>Robot</item>
+        <item>Cargador</item>
+        <item>Camiones</item>
+    </string-array>
+</resources>
