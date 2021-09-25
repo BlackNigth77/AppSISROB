@@ -132,6 +132,14 @@ public class RegistrarNoticiasActivity extends AppCompatActivity
             txtTituloNoticias.setError("Titulo obligatorio");
             valida = false;
         }
+        if(fecha.equals("")) {
+            txtFechaNoticias.setError("Fecha obligatoria");
+            valida = false;
+        }
+        if(detalle.equals("")) {
+            txtDetalleNoticia.setError("Detalle Obligatorio");
+            valida = false;
+        }
         return valida;
 
     }
