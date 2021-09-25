@@ -42,10 +42,10 @@ public class DAONoticia {
                     null,valores);
             if (resultado==-1) {
                 //Toast.makeText(this.context, noticia.getFecha(), Toast.LENGTH_SHORT).show();
-                respuesta = "Error al Insertar la Noticia";
+                respuesta = "Error al guardar la Noticia";
             }else{
                 //Toast.makeText(this.context, "Se Inserto el Equipo correctamente", Toast.LENGTH_SHORT).show();
-                respuesta ="Se Insertó Correctamente la Noticia";
+                respuesta ="Se guardó Correctamente la Noticia";
             }
 
         }catch (Exception e){

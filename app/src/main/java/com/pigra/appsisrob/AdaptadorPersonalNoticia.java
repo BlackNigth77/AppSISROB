@@ -78,7 +78,7 @@ public class AdaptadorPersonalNoticia extends RecyclerView.Adapter<AdaptadorPers
                         AlertDialog.Builder v2 = new AlertDialog.Builder(context);
                         v2.setTitle("Información!");
                         v2.setMessage(resultado);
-                        v2.setPositiveButton("ACEPTAR", new DialogInterface.OnClickListener() {
+                        v2.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Intent intent = new Intent(context,RegistrarNoticiasActivity.class);
@@ -89,7 +89,7 @@ public class AdaptadorPersonalNoticia extends RecyclerView.Adapter<AdaptadorPers
 
                     }
                 });
-                ventana.setNegativeButton("NO",null);
+                ventana.setNegativeButton("No",null);
                 ventana.create().show();
             }
         });
