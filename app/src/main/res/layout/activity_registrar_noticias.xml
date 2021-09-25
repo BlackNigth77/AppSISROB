@@ -9,8 +9,8 @@
 
 
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".RegistrarNoticiasActivity">
 
     <TextView
@@ -45,10 +45,11 @@
 
     <EditText
         android:id="@+id/txtTituloNoticias"
-        android:layout_width="369dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/custom_imput"
         android:drawableStart="@drawable/custom_focus_titulo_noticia"
         android:drawablePadding="10dp"
@@ -82,10 +83,11 @@
 
     <EditText
         android:id="@+id/txtFechaNoticias"
-        android:layout_width="242dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/custom_imput"
         android:drawableStart="@drawable/custom_focus_fecha_noticia"
         android:drawablePadding="10dp"
@@ -104,7 +106,7 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="55dp"
+        android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
@@ -118,10 +120,11 @@
 
     <EditText
         android:id="@+id/txtDetalleNoticia"
-        android:layout_width="369dp"
+        android:layout_width="match_parent"
         android:layout_height="142dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/custom_imput"
         android:ems="10"
         android:fontFamily="@font/arimo"

@@ -12,18 +12,19 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:background="@color/listados_back"
+            android:layout_margin="1dp"
             android:padding="10dp">
 
             <ImageView
                 android:id="@+id/imgNoticia"
-                android:layout_width="160dp"
-                android:layout_height="134dp"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/noticia_lista" />
+                app:srcCompat="@drawable/noticia_img" />
 
             <TextView
                 android:id="@+id/filaTituloNoticia"

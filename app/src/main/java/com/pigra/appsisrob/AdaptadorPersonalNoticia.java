@@ -33,11 +33,10 @@ public class AdaptadorPersonalNoticia extends RecyclerView.Adapter<AdaptadorPers
 
     @NonNull
     @Override
-    public AdaptadorPersonalNoticia.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
+    public AdaptadorPersonalNoticia.MyViewHolder
+    onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.fila_noticias, parent,false);
-
         return new MyViewHolder(view);
     }
 
@@ -82,7 +81,7 @@ public class AdaptadorPersonalNoticia extends RecyclerView.Adapter<AdaptadorPers
                         v2.setPositiveButton("ACEPTAR", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent = new Intent(context,InicioActivity.class);
+                                Intent intent = new Intent(context,RegistrarNoticiasActivity.class);
                                 context.startActivity(intent);
                             }
                         });

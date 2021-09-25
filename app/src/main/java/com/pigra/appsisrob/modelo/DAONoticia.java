@@ -38,7 +38,8 @@ public class DAONoticia {
             valores.put("titulo",noticia.getTitulo());
             valores.put("fecha",noticia.getFecha());
             valores.put("detalle",noticia.getDetalle());
-            long resultado =  db.insert(Constantes.NOMBRE_TABLA2,null,valores);
+            long resultado =  db.insert(Constantes.NOMBRE_TABLA2,
+                    null,valores);
             if (resultado==-1) {
                 //Toast.makeText(this.context, noticia.getFecha(), Toast.LENGTH_SHORT).show();
                 respuesta = "Error al Insertar la Noticia";
