@@ -7,9 +7,9 @@ public class Noticia {
     private String fecha;
     private String detalle;
 
-    public Noticia(){}
+    //public Noticia(){}
 
-    public Noticia ( String titulo, String fecha, String detalle) {
+    public Noticia( String titulo, String fecha, String detalle) {
         this.titulo = titulo;
         this.fecha = fecha;
         this.detalle = detalle;

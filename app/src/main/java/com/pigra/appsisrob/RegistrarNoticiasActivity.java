@@ -19,16 +19,15 @@ import com.pigra.appsisrob.modelo.DAONoticia;
 
 
 
-public class RegistrarNoticiasActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegistrarNoticiasActivity extends AppCompatActivity
+        implements View.OnClickListener{
 
     TextView lblTituloGenVideo;
     EditText txtTituloNoticias, txtFechaNoticias, txtDetalleNoticia;
     Button btnGrabarNoticia;
-    Noticia noticia;
-
-
     String titulo, fecha, detalle;
     int  id;
+    Noticia noticia;
 
     Boolean actualizar = false;
 
@@ -43,38 +42,10 @@ public class RegistrarNoticiasActivity extends AppCompatActivity implements View
         verificarEdicion();
         txtFechaNoticias = (EditText) findViewById(R.id.txtFechaNoticias);
         txtFechaNoticias.setOnClickListener(this);
-
-    }
-
-    private void asignarReferencias() {
-
-        txtTituloNoticias = findViewById(R.id.txtTituloNoticias);
-        txtFechaNoticias = findViewById(R.id.txtFechaNoticias);
-        txtDetalleNoticia = findViewById(R.id.txtDetalleNoticia);
-        btnGrabarNoticia = findViewById(R.id.btnGrabarNoticia);
-        lblTituloGenVideo = findViewById(R.id.lblTituloGenVideo);
-
-
-        btnGrabarNoticia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(capturarDatos()) {
-                    String mensaje;
-                    if (!actualizar)
-                        mensaje = daoNoticia.registrarNoticia(noticia);
-                    else
-                        mensaje = daoNoticia.actualizarNoticia(noticia);
-
-                    MostrarMensaje(mensaje);
-                }
-            }
-        });
     }
 
     private void verificarEdicion() {
-
         if(getIntent().hasExtra("id")){
-
             id = Integer.parseInt(getIntent().getStringExtra("id"));
             titulo = getIntent().getStringExtra("titulo");
             fecha = getIntent().getStringExtra("fecha");
@@ -83,11 +54,30 @@ public class RegistrarNoticiasActivity extends AppCompatActivity implements View
             txtTituloNoticias.setText(titulo);
             txtFechaNoticias.setText(fecha);
             txtDetalleNoticia.setText(detalle);
-            btnGrabarNoticia.setText("EDITAR VIDEO");
-            lblTituloGenVideo.setText("EDITAR INFORMACION");
-
-
+            //btnGrabarNoticia.setText("EDITAR VIDEO");
+            //lblTituloGenVideo.setText("EDITAR INFORMACION");
         }
+    }
+
+    private void asignarReferencias() {
+        txtTituloNoticias = findViewById(R.id.txtTituloNoticias);
+        txtFechaNoticias = findViewById(R.id.txtFechaNoticias);
+        txtDetalleNoticia = findViewById(R.id.txtDetalleNoticia);
+        btnGrabarNoticia = findViewById(R.id.btnGrabarNoticia);
+        btnGrabarNoticia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(capturarDatos()) {
+                    String mensaje;
+                    if (actualizar == false) {
+                        mensaje = daoNoticia.registrarNoticia(noticia);
+                    }else {
+                        mensaje = daoNoticia.actualizarNoticia(noticia);
+                    }
+                    MostrarMensaje(mensaje);
+                }
+            }
+        });
     }
 
     private void MostrarMensaje(String mensaje)
@@ -104,8 +94,6 @@ public class RegistrarNoticiasActivity extends AppCompatActivity implements View
         });
         ventana.create().show();
     }
-
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -128,38 +116,23 @@ public class RegistrarNoticiasActivity extends AppCompatActivity implements View
         newFragment.show(getSupportFragmentManager(), "datePicker");
     }
 
-
-
     private boolean capturarDatos() {
+        titulo = txtTituloNoticias.getText().toString();
+        fecha = txtFechaNoticias.getText().toString();
+        detalle = txtDetalleNoticia.getText().toString();
 
-        if(txtTituloNoticias.getText().toString().equals(""))
-        {
-            txtTituloNoticias.setError("Titulo de Noticia Obligatoria");
-            return false;
-        }
-        if(txtFechaNoticias.getText().toString().equals(""))
-        {
-            txtFechaNoticias.setError("Fecha de Noticia Obligatoria");
-            return false;
-        }
-        if(txtDetalleNoticia.getText().toString().equals(""))
-        {
-            txtDetalleNoticia.setError("Detalle de Noticia Obligatorio");
-            return false;
+        if (actualizar == false){
+            noticia = new Noticia(titulo,fecha,detalle);
+        }else{
+            noticia = new Noticia(id,titulo,fecha,detalle);
         }
 
-        noticia = new Noticia();
-        if(actualizar)
-            noticia.setId(id);
+        boolean valida = true;
+        if(titulo.equals("")) {
+            txtTituloNoticias.setError("Titulo obligatorio");
+            valida = false;
+        }
+        return valida;
 
-        noticia.setTitulo(txtTituloNoticias.getText().toString());
-        noticia.setFecha(txtFechaNoticias.getText().toString());
-        noticia.setDetalle(txtDetalleNoticia.getText().toString());
-
-
-
-        return true;
     }
-
-
 }

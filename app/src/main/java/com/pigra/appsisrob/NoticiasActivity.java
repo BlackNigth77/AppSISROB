@@ -22,15 +22,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NoticiasActivity extends AppCompatActivity {
-    String variable;
-
-
+   // String variable;
     FloatingActionButton btnAgregarNoticia;
-
     RecyclerView recyclerNoticias;
 
     DAONoticia daoNoticia = new DAONoticia(this);
-    List<Noticia> listaNoticia = new ArrayList<>();
+    List<Noticia> listaNoticias = new ArrayList<>();
     AdaptadorPersonalNoticia adaptador;
 
 
@@ -45,8 +42,8 @@ public class NoticiasActivity extends AppCompatActivity {
     }
 
     private void mostrarVideos(){
-        listaNoticia = daoNoticia.getAllNoticias();
-        adaptador = new AdaptadorPersonalNoticia(this,listaNoticia);
+        listaNoticias = daoNoticia.getAllNoticias();
+        adaptador = new AdaptadorPersonalNoticia(this,listaNoticias);
         recyclerNoticias.setAdapter(adaptador);
         recyclerNoticias.setLayoutManager(new LinearLayoutManager(this));
     }

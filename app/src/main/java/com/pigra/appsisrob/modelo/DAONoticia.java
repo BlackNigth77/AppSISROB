@@ -23,7 +23,7 @@ public class DAONoticia {
 
     public DAONoticia(Context context) {
         this.context = context;
-        noticiaDB = new NoticiaDB (context);
+        noticiaDB = new NoticiaDB(context);
     }
 
     public void abrirBD(){
@@ -31,91 +31,81 @@ public class DAONoticia {
     }
 
     public String registrarNoticia(Noticia noticia){
-
-
-        String rspta;
+        String respuesta;
 
         try {
             ContentValues valores = new ContentValues();
             valores.put("titulo",noticia.getTitulo());
             valores.put("fecha",noticia.getFecha());
             valores.put("detalle",noticia.getDetalle());
-
             long resultado =  db.insert(Constantes.NOMBRE_TABLA2,null,valores);
-
             if (resultado==-1) {
-                Toast.makeText(this.context, noticia.getFecha(), Toast.LENGTH_SHORT).show();
-                rspta = "Error al Insertar la Noticia";
-            }else
+                //Toast.makeText(this.context, noticia.getFecha(), Toast.LENGTH_SHORT).show();
+                respuesta = "Error al Insertar la Noticia";
+            }else{
                 //Toast.makeText(this.context, "Se Inserto el Equipo correctamente", Toast.LENGTH_SHORT).show();
-                rspta ="Se Inserto Correctamente la Noticia";
+                respuesta ="Se Insertó Correctamente la Noticia";
+            }
 
-        }catch (Exception ex){
+        }catch (Exception e){
             //Toast.makeText(this.context, ex.getMessage(), Toast.LENGTH_SHORT).show();
-            rspta = ex.getMessage();
+            respuesta = e.getMessage();
         }
-        return rspta;
-
+        return respuesta;
     }
-
 
     public String actualizarNoticia(Noticia noticia){
-        String rspta;
+        String respuesta;
         try {
             ContentValues valores = new ContentValues();
-            valores.put("id", noticia.getId());
+            //valores.put("id", noticia.getId());
             valores.put("titulo", noticia.getTitulo());
-            valores.put("fecha",noticia.getFecha());
-            valores.put("detalle",noticia.getDetalle());
-
-            long resultado =  db.update(Constantes.NOMBRE_TABLA2, valores,
-                    "id=" + noticia.getId(),null);
-
-            if (resultado==-1)
+            valores.put("fecha", noticia.getFecha());
+            valores.put("detalle", noticia.getDetalle());
+            long resultado = db.update(Constantes.NOMBRE_TABLA2, valores,
+                    "id=" + noticia.getId(), null);
+            if (resultado == -1)
                 //Toast.makeText(this.context, "Error al insertar", Toast.LENGTH_SHORT).show();
-                rspta = "Error al Actualizar la Noticia";
-            else
+                respuesta = "Error al Actualizar la Noticia";
+            else {
                 //Toast.makeText(this.context, "Se inserto correctamente", Toast.LENGTH_SHORT).show();
-                rspta ="Se Actualizó correctamente los datos la Noticia";
-        }
-        catch (Exception ex){
+                respuesta = "Se Actualizó correctamente los datos la Noticia";
+            }
+        }catch (Exception e){
             //Toast.makeText(this.context, ex.getMessage(), Toast.LENGTH_SHORT).show();
-            rspta = ex.getMessage();
+            respuesta = e.getMessage();
         }
-        return rspta;
+        return respuesta;
     }
 
 
-    public String eliminarNoticia(int _id){
-        String rspta;
+    public String eliminarNoticia(int id){
+        String respuesta;
         try {
-            ContentValues valores = new ContentValues();
-            valores.put("id", _id);
-
-            long resultado =  db.delete(Constantes.NOMBRE_TABLA2,"id=" + _id,null );
-
-            if (resultado==-1)
-                //Toast.makeText(this.context, "Error al insertar", Toast.LENGTH_SHORT).show();
-                rspta = "Error al Eliminar la Noticia";
-            else
-                //Toast.makeText(this.context, "Se inserto correctamente", Toast.LENGTH_SHORT).show();
-                rspta ="Se Eliminó Correctamente la Noticia";
-        }
-        catch (Exception ex){
+            //ContentValues valores = new ContentValues();
+            //valores.put("id", id);
+            long resultado = db.delete(Constantes.NOMBRE_TABLA2,
+                    "id=" + id, null);
+            if (resultado == -1)
+                respuesta = "Error al Eliminar la Noticia";
+            else {
+                respuesta = "Se Eliminó Correctamente la Noticia";
+            }
+        }catch (Exception e){
             //Toast.makeText(this.context, ex.getMessage(), Toast.LENGTH_SHORT).show();
-            rspta = ex.getMessage();
+            respuesta = e.getMessage();
         }
-        return rspta;
+        return respuesta;
     }
 
     public List<Noticia> getAllNoticias(){
-        List<Noticia> lstNoticias = new ArrayList<>();
+        List<Noticia> listaNoticias = new ArrayList<>();
         try
         {
             Cursor cursor = db.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA2,null);
             while (cursor.moveToNext())
             {
-                lstNoticias.add(new Noticia(cursor.getInt(0),
+                listaNoticias.add(new Noticia(cursor.getInt(0),
                         cursor.getString(1),
                         cursor.getString(2),
                         cursor.getString(3)));
@@ -126,7 +116,7 @@ public class DAONoticia {
         {
             Log.d("=>",e.getMessage());
         }
-        return lstNoticias;
+        return listaNoticias;
     }
 
 
