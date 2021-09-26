@@ -53,4 +53,6 @@ dependencies {
     // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
+    //Servicios
+    implementation 'com.android.volley:volley:1.2.1'
 }
