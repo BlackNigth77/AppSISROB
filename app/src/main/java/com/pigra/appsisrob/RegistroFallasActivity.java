@@ -33,7 +33,7 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
     DatabaseReference dbReference;
     EditText txtFechaFalla,txtFotoFalla, txtUnidadMinera, txtEquipoFalla, txtTipoFalla, txtSistemaFalla, txtObservacionFalla, txtUbicacionFalla ;
     ImageView fotoFalla;
-    Button btnGrabarEquipo, btnFotoFalla;
+    Button btnGrabarEquipo, btnFotoFalla, btnSR, btnTambo;
     //TextView equipoFalla;
     Spinner spinner_equipo;
 
@@ -140,6 +140,31 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
                 txtUbicacionFalla = findViewById(R.id.txtUbicacionFalla);
                //fotoFalla = findViewById(R.id.idFotofalla);
                // btnFotoFalla = findViewById(R.id.btnFotoFalla);
+                btnSR = findViewById(R.id.btnSR);
+                btnTambo = findViewById(R.id.btnTambo);
+                btnSR.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(RegistroFallasActivity.this, MapaActivity.class);
+                        intent.putExtra("latitud","-14.231817194940652");
+                        intent.putExtra("longitud","-70.32245853830929");
+                        intent.putExtra("titulo","UM San Rafael");
+                        startActivity(intent);
+                    }
+                });
+                btnTambo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(RegistroFallasActivity.this, MapaActivity.class);
+                        intent.putExtra("latitud","-15.463164363533581");
+                        intent.putExtra("longitud","-71.91598371269598");
+                        intent.putExtra("titulo","UM Tambomayo");
+                        startActivity(intent);
+
+                    }
+                });
+
+
                 btnGrabarEquipo = findViewById(R.id.btnGrabarEquipo);
                 btnGrabarEquipo.setOnClickListener(new View.OnClickListener() {
                     @Override

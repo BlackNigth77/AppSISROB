@@ -291,7 +291,7 @@
                     android:paddingStart="10dp"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.186"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lblFotoFalla" />
 
@@ -381,9 +381,37 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.496"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtUbicacionFalla"
-                    app:layout_constraintVertical_bias="0.2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnTambo"
                     tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnTambo"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/custom_buttom"
+                    android:textColor="@color/white"
+                    android:text="TAMBOMAYO"
+                    android:textSize="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUbicacionFalla" />
+
+                <Button
+                    android:id="@+id/btnSR"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_buttom"
+                    android:text="SAN RAFAEL"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.191"
+                    app:layout_constraintStart_toEndOf="@+id/btnTambo"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUbicacionFalla" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
