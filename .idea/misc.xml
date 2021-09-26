@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable-v24/ic_add_lista.xml" value="0.2203125" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/bg_boton_degradado.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_agregarfotofalla.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_buttom.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_capacidad.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/custom_focus_detnoticia.xml" value="0.1" />
@@ -79,9 +81,11 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_visor_video.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.2" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.30694444444444446" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_solicitud_repuesto.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.22962962962962963" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fragment_date_picker.xml" value="0.1" />
         <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/bg_boton_degradado.xml" value="0.38333333333333336" />
         <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_buttom.xml" value="0.38333333333333336" />
         <entry key="..\:/srcAndroid/AppSISROB/app/src/main/res/drawable/custom_focus_capacidad.xml" value="0.38333333333333336" />

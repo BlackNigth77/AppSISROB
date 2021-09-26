@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_gris2"
     tools:context=".LoginActivity">
 
     <TextView
@@ -72,6 +73,7 @@
         android:background="@drawable/custom_buttom"
         android:fontFamily="@font/arimo"
         android:text="@string/btnIngresar"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,10 +85,10 @@
         android:layout_width="227dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
+        android:autoLink="phone"
         android:fontFamily="@font/arimo"
         android:text="@string/olvide_contraseña"
         android:textAlignment="center"
-        android:autoLink="phone"
         android:textColor="@color/principal"
         android:textSize="14sp"
         android:textStyle="normal|italic"

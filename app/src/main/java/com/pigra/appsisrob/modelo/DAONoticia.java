@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.pigra.appsisrob.entidades.Noticia;
 import com.pigra.appsisrob.utilitarios.Constantes;
-import com.pigra.appsisrob.utilitarios.NoticiaDB;
+import com.pigra.appsisrob.utilitarios.ConeccionDB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +17,13 @@ import java.util.List;
 
 public class DAONoticia {
 
-    NoticiaDB noticiaDB;
+    ConeccionDB noticiaDB;
     SQLiteDatabase db;
     private Context context;
 
     public DAONoticia(Context context) {
         this.context = context;
-        noticiaDB = new NoticiaDB(context);
+        noticiaDB = new ConeccionDB(context);
     }
 
     public void abrirBD(){

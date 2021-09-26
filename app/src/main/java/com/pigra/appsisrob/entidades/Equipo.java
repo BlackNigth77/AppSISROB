@@ -9,11 +9,9 @@ public class Equipo {
     private String modelo;
     private int capacidad;
 
+    public Equipo() {}
 
-
-    public Equipo(){}
-
-    public Equipo (String descripcion, String tipo, String marca, String modelo, int capacidad) {
+    public Equipo(String descripcion, String tipo, String marca, String modelo, int capacidad) {
         this.descripcion = descripcion;
         this.tipo = tipo;
         this.marca = marca;
@@ -21,15 +19,16 @@ public class Equipo {
         this.capacidad = capacidad;
     }
 
-    public Equipo(int id, String descripcion , String tipo,  String marca, String modelo, int capacidad) {
+    public Equipo(int id, String descripcion, String tipo, String marca, String modelo, int capacidad) {
         this.id = id;
         this.descripcion = descripcion;
         this.tipo = tipo;
         this.marca = marca;
         this.modelo = modelo;
         this.capacidad = capacidad;
-
     }
+
+
 
     public int getId() {
         return id;

@@ -12,26 +12,28 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/listados_back"
+            android:layout_height="116dp"
             android:layout_margin="1dp"
+            android:background="@drawable/background_lista"
             android:padding="10dp">
 
             <ImageView
                 android:id="@+id/imgNoticia"
-                android:layout_width="90dp"
-                android:layout_height="100dp"
+                android:layout_width="115dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/noticia_img" />
+                app:layout_constraintVertical_bias="0.058"
+                app:srcCompat="@drawable/noticia_lista_new1" />
 
             <TextView
                 android:id="@+id/filaTituloNoticia"
-                android:layout_width="146dp"
-                android:layout_height="59dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="28dp"
+                android:layout_width="204dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/arimo"
                 android:text="Titulo de Noticia"
                 android:textAlignment="center"
@@ -41,9 +43,9 @@
 
             <TextView
                 android:id="@+id/filaFechaNoticia"
-                android:layout_width="107dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="48dp"
+                android:layout_width="204dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/arimo"
                 android:text="Fecha de Noticia"
@@ -55,14 +57,15 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imgNoticia"
                 app:layout_constraintTop_toBottomOf="@+id/filaTituloNoticia"
-                app:layout_constraintVertical_bias="0.088" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageButton
                 android:id="@+id/btnEditarNoticia"
-                android:layout_width="38dp"
-                android:layout_height="44dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintHorizontal_bias="0.94"
                 app:layout_constraintStart_toEndOf="@+id/filaTituloNoticia"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_ir"
@@ -70,13 +73,15 @@
 
             <ImageButton
                 android:id="@+id/btnEliminarNoticia"
-                android:layout_width="38dp"
-                android:layout_height="44dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
                 app:layout_constraintStart_toEndOf="@+id/filaTituloNoticia"
                 app:layout_constraintTop_toBottomOf="@+id/btnEditarNoticia"
-                app:layout_constraintVertical_bias="0.578"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_eliminar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

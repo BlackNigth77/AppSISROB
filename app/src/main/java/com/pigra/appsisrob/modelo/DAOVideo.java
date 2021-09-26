@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.pigra.appsisrob.entidades.Video;
 import com.pigra.appsisrob.utilitarios.Constantes;
-import com.pigra.appsisrob.utilitarios.VideoDB;
+import com.pigra.appsisrob.utilitarios.ConeccionDB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +16,13 @@ import java.util.List;
 
 public class DAOVideo {
 
-    VideoDB videoDB;
+    ConeccionDB videoDB;
     SQLiteDatabase db;
     private Context context;
 
     public DAOVideo(Context context) {
         this.context = context;
-        videoDB = new VideoDB (context);
+        videoDB = new ConeccionDB (context);
     }
 
     public void abrirBD(){

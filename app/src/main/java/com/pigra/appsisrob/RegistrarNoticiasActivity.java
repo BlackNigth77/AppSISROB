@@ -22,7 +22,7 @@ import com.pigra.appsisrob.modelo.DAONoticia;
 public class RegistrarNoticiasActivity extends AppCompatActivity
         implements View.OnClickListener{
 
-    TextView lblTituloGenVideo;
+    TextView lblTituloNoticiaGen;
     EditText txtTituloNoticias, txtFechaNoticias, txtDetalleNoticia;
     Button btnGrabarNoticia;
     String titulo, fecha, detalle;
@@ -54,8 +54,9 @@ public class RegistrarNoticiasActivity extends AppCompatActivity
             txtTituloNoticias.setText(titulo);
             txtFechaNoticias.setText(fecha);
             txtDetalleNoticia.setText(detalle);
-            //btnGrabarNoticia.setText("EDITAR VIDEO");
-            //lblTituloGenVideo.setText("EDITAR INFORMACION");
+            btnGrabarNoticia.setText("EDITAR NOTICIA");
+            lblTituloNoticiaGen.setText("EDITAR INFORMACION");
+
         }
     }
 
@@ -64,6 +65,8 @@ public class RegistrarNoticiasActivity extends AppCompatActivity
         txtFechaNoticias = findViewById(R.id.txtFechaNoticias);
         txtDetalleNoticia = findViewById(R.id.txtDetalleNoticia);
         btnGrabarNoticia = findViewById(R.id.btnGrabarNoticia);
+        lblTituloNoticiaGen = findViewById(R.id.lblTituloNoticiaGen);
+
         btnGrabarNoticia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 import com.pigra.appsisrob.entidades.Video;
@@ -24,8 +24,11 @@ public class RegistrarVideosActivity extends AppCompatActivity {
     Video video;
 
 
-    String titulo, ruta;
-    int duracion, id;
+    String titulo;
+    String ruta;
+
+    int  id;
+    int  duracion;
 
     Boolean actualizar = false;
 
@@ -69,21 +72,24 @@ public class RegistrarVideosActivity extends AppCompatActivity {
 
     private void verificarEdicion() {
 
-        if(getIntent().hasExtra("id")){
+
+        if(getIntent().hasExtra("id")) {
 
             id = Integer.parseInt(getIntent().getStringExtra("id"));
             titulo = getIntent().getStringExtra("titulo");
-            duracion = Integer.parseInt(getIntent().getStringExtra("duracion"));
             ruta = getIntent().getStringExtra("ruta");
+            duracion = Integer.parseInt(getIntent().getStringExtra("duracion"));
             actualizar = true;
             txtTituloVideo.setText(titulo);
-            txtDuracionVideo.setText(duracion);
+            txtDuracionVideo.setText(duracion+"");
             txtRutaVideo.setText(ruta);
             btnGrabarVideo.setText("EDITAR VIDEO");
             lblTituloGenVideo.setText("EDITAR INFORMACION");
 
 
         }
+
+
     }
 
     private void MostrarMensaje(String mensaje)
@@ -118,14 +124,15 @@ public class RegistrarVideosActivity extends AppCompatActivity {
             txtRutaVideo.setError("Ruta de Video Obligatoria");
             return false;
         }
+        Toast.makeText(getApplicationContext(), "Verificar", Toast.LENGTH_SHORT).show();
 
         video = new Video();
         if(actualizar)
-            video.setId(id);
 
-        video.setTitulo(txtTituloVideo.getText().toString());
-        video.setDuracion(Integer.parseInt(txtDuracionVideo.getText().toString()));
-        video.setRuta(txtRutaVideo.getText().toString());
+            video.setId(id);
+            video.setTitulo(txtTituloVideo.getText().toString());
+            video.setDuracion(Integer.parseInt(txtDuracionVideo.getText().toString()));
+            video.setRuta(txtRutaVideo.getText().toString());
 
 
 

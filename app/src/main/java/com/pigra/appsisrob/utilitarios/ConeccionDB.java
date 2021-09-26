@@ -4,9 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class VideoDB extends SQLiteOpenHelper {
+public class ConeccionDB extends SQLiteOpenHelper {
 
-    public VideoDB(Context context) {
+    public ConeccionDB(Context context) {
         super(context,Constantes.NOMBRE_BD,null,Constantes.VERSION);
     }
 
@@ -32,6 +32,14 @@ public class VideoDB extends SQLiteOpenHelper {
                 "  capacidad INTEGER NOT NULL); ";
         sqLiteDatabase.execSQL(query2);
 
+
+        String query3 = "" +
+                "CREATE TABLE " + Constantes.NOMBRE_TABLA2 +
+                " (id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "  titulo TEXT NOT NULL, " +
+                "  fecha TEXT NOT NULL, " +
+                "  detalle TEXT NOT NULL); ";
+        sqLiteDatabase.execSQL(query3);
 
     }
 

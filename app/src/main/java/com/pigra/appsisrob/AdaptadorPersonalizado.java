@@ -15,10 +15,7 @@ import com.pigra.appsisrob.entidades.Video;
 
 import java.util.ArrayList;
 import java.util.List;
-import android.net.Uri;
 
-import com.pigra.appsisrob.MainActivity;
-import com.pigra.appsisrob.R;
 
 
 public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPersonalizado.MyViewHodler>
@@ -49,10 +46,23 @@ public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPerson
         holder.filaRutaVideo.setText(listaVideos.get(position).getRuta()+"");
         holder.fIlaDuracionVideo.setText(listaVideos.get(position).getDuracion()+" min ");
 
+
         holder.btnVerVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(context, VisorVideoActivity.class);
+                intent.putExtra("id", listaVideos.get(position).getId()+"");
+                intent.putExtra("titulo", listaVideos.get(position).getTitulo()+"");
+                intent.putExtra("duracion", listaVideos.get(position).getDuracion()+"");
+                intent.putExtra("ruta", listaVideos.get(position).getRuta()+"");
+                context.startActivity(intent);
+            }
+        });
+
+        holder.btnEditarvideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(context, RegistrarVideosActivity.class);
                 intent.putExtra("id", listaVideos.get(position).getId()+"");
                 intent.putExtra("titulo", listaVideos.get(position).getTitulo()+"");
                 intent.putExtra("duracion", listaVideos.get(position).getDuracion()+"");
@@ -74,7 +84,7 @@ public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPerson
     public class MyViewHodler extends RecyclerView.ViewHolder {
 
         TextView filaTitulo, filaRutaVideo,fIlaDuracionVideo;
-        ImageButton btnVerVideo;
+        ImageButton btnVerVideo,btnEditarvideo;
 
         public MyViewHodler (@NonNull View itemView) {
             super(itemView);
@@ -82,6 +92,7 @@ public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPerson
             filaRutaVideo = itemView.findViewById(R.id.filaRutaVideo);
             fIlaDuracionVideo = itemView.findViewById(R.id.fIlaDuracionVideo);
             btnVerVideo = itemView.findViewById(R.id.btnVerVideo);
+            btnEditarvideo = itemView.findViewById(R.id.btnEditarVideo);
 
         }
     }

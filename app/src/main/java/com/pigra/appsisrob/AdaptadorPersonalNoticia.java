@@ -81,7 +81,7 @@ public class AdaptadorPersonalNoticia extends RecyclerView.Adapter<AdaptadorPers
                         v2.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent = new Intent(context,RegistrarNoticiasActivity.class);
+                                Intent intent = new Intent(context,NoticiasActivity.class);
                                 context.startActivity(intent);
                             }
                         });

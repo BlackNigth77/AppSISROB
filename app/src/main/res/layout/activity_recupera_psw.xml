@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_gris2"
     tools:context=".RecuperaPswActivity">
 
     <TextView
@@ -73,6 +74,7 @@
         android:background="@drawable/custom_buttom"
         android:fontFamily="@font/arimo"
         android:text="RECUPERAR"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
