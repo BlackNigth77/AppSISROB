@@ -53,6 +53,8 @@ dependencies {
     // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
+    //MAps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
     //Servicios
     implementation 'com.android.volley:volley:1.2.1'
 }
