@@ -41,6 +41,17 @@ public class ConeccionDB extends SQLiteOpenHelper {
                 "  detalle TEXT NOT NULL); ";
         sqLiteDatabase.execSQL(query3);
 
+        String query4 = "" +
+                "CREATE TABLE " + Constantes.NOMBRE_TABLA4 +
+                " (id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "  codigo TEXT NOT NULL, " +
+                "  fecha TEXT NOT NULL, " +
+                "  descripcion TEXT NOT NULL, " +
+                "  stock INTEGER NOT NULL, " +
+                "  categoria INTEGER NOT NULL, " +
+                "  cantidad INTEGER NOT NULL); ";
+        sqLiteDatabase.execSQL(query4);
+
     }
 
     @Override

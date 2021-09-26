@@ -8,20 +8,20 @@ import android.util.Log;
 
 import com.pigra.appsisrob.entidades.SolicitudRepuesto;
 import com.pigra.appsisrob.utilitarios.Constantes;
-import com.pigra.appsisrob.utilitarios.SolicitudRepuestoDB;
+import com.pigra.appsisrob.utilitarios.ConeccionDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class DAOSolicitudRepuesto {
-    SolicitudRepuestoDB solicitudRepuestoDB;
+    ConeccionDB solicitudRepuestoDB;
     SQLiteDatabase db;
     private Context context;
 
     public DAOSolicitudRepuesto(Context context) {
         this.context = context;
-        solicitudRepuestoDB = new SolicitudRepuestoDB(context);
+        solicitudRepuestoDB = new ConeccionDB(context);
     }
     public void abrirBD(){
         db = solicitudRepuestoDB.getWritableDatabase() ;
