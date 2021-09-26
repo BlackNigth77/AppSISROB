@@ -87,6 +87,7 @@ public class RegistrarVideosActivity extends AppCompatActivity {
             lblTituloGenVideo.setText("EDITAR INFORMACION");
 
 
+
         }
 
 

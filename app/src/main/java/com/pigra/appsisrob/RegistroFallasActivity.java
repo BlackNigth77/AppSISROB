@@ -34,7 +34,7 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
     EditText txtFechaFalla,txtFotoFalla, txtUnidadMinera, txtEquipoFalla, txtTipoFalla, txtSistemaFalla, txtObservacionFalla, txtUbicacionFalla ;
     ImageView fotoFalla;
     Button btnGrabarEquipo, btnFotoFalla, btnSR, btnTambo;
-    //TextView equipoFalla;
+    TextView lblRegFallasGen;
     Spinner spinner_equipo;
 
 
@@ -48,6 +48,7 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
         setContentView(R.layout.activity_registro_fallas);
         inicializarFirebase();
         txtFechaFalla = (EditText) findViewById(R.id.txtFechaFalla);
+        lblRegFallasGen = (TextView) findViewById(R.id.lblRegFallasGen);
         txtFechaFalla.setOnClickListener(this);
         fotoFalla = findViewById(R.id.idFotofalla);
         asignarReferencias();
@@ -62,6 +63,7 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
             public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
                 //Toast.makeText(parent.getContext(),"El libro corresponde a la sede de: "+parent.getItemAtPosition(i).toString(),Toast.LENGTH_LONG).show();
                 //equipoFalla.setText("El libro pertenece a la sede de: "+parent.getItemAtPosition(i).toString());
+
                 txtEquipoFalla.setText(parent.getItemAtPosition(i).toString());
             }
             @Override
@@ -73,6 +75,8 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
     }
     private void verificarRegistrar(){
         if(getIntent().hasExtra("id")){
+
+
             registrar = false;
             id = getIntent().getStringExtra("id");
             txtFechaFalla.setText(getIntent().getStringExtra("fecha"));
@@ -83,6 +87,8 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
             txtObservacionFalla.setText(getIntent().getStringExtra("observacion"));
             txtFotoFalla.setText(getIntent().getStringExtra("foto"));
             txtUbicacionFalla.setText(getIntent().getStringExtra("ubicacion"));
+            lblRegFallasGen.setText("EDITAR REGISTRO DE FALLA");
+            btnGrabarEquipo.setText("EDITAR FALLA");
 
         }
     }
@@ -198,7 +204,14 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
             rf.setUbicacion(ubicacionFalla);
             dbReference.child("ReporteFalla").child(rf.getId()).setValue(rf);
             Toast.makeText(this,"Falla Registrada",Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
+            startActivity(intent);
+
         }else{
+
+
+
             HashMap map = new HashMap();
             map.put("fecha", fechaFalla);
             map.put("unidad_minera", unidadMinera);

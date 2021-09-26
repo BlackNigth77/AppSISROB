@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MenuEquipos extends AppCompatActivity {
+
+    TextView txtMixer,txtRobot ,txtCargador ,txtCamion;
+    ImageView imgMenEqOp1,imgMenEqOp2,imgMenEqOp3,imgMenEqOp4;
 
     FloatingActionButton btnRegistrarEquipo;
 
@@ -21,11 +26,41 @@ public class MenuEquipos extends AppCompatActivity {
 
     private void asignarReferencias(){
 
+
+        txtMixer = findViewById(R.id.txtMixer);
+        imgMenEqOp1 = findViewById(R.id.imgMenEqOp1);
+
+        txtRobot = findViewById(R.id.txtRobot);
+        imgMenEqOp2 = findViewById(R.id.imgMenEqOp2);
+
+        txtCargador = findViewById(R.id.txtCargador);
+        imgMenEqOp3 = findViewById(R.id.imgMenEqOp3);
+
+        txtCamion = findViewById(R.id.txtCamion);
+        imgMenEqOp4 = findViewById(R.id.imgMenEqOp4);
+
         btnRegistrarEquipo=findViewById(R.id.btnAgregarEquipo);
+
+        txtMixer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,ActivityFiltroEquipos.class);
+                startActivity(intent);
+            }
+        });
+
+        imgMenEqOp1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,ActivityFiltroEquipos.class);
+                startActivity(intent);
+            }
+        });
+
         btnRegistrarEquipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuEquipos.this,RegistrarEquipoActivity.class);
+                Intent intent = new Intent(MenuEquipos.this,ActivityFiltroEquipos.class);
                 startActivity(intent);
             }
         });

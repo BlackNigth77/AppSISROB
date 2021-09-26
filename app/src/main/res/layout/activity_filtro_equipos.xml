@@ -13,7 +13,7 @@
         android:background="#000000"
         android:fontFamily="@font/arimo"
         android:gravity="center"
-        android:text="@string/titulo_filtro_eq"
+        android:text="MIXER"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

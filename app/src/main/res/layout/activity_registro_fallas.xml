@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/browser_actions_title_color">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo_gris2"
             android:padding="20dp"
             tools:context=".RegistroFallasActivity">
 
 
                 <TextView
                     android:id="@+id/lblRegFallasGen"
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/browser_actions_context_menu_max_width"
                     android:layout_height="50dp"
                     android:background="#000000"
                     android:fontFamily="@font/arimo"
@@ -24,7 +26,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_bias="0.54"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,8 +37,8 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/abril_fatface"
-                    android:text="Fecha"
                     android:inputType="date"
+                    android:text="Fecha"
                     android:textColor="@color/principal"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -109,7 +111,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/abril_fatface"
-                    android:text="Equipo"
+                    android:text="Tipo Falla"
                     android:textColor="@color/principal"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +147,7 @@
                     android:drawablePadding="10dp"
                     android:ems="10"
                     android:fontFamily="@font/arimo"
-                    android:hint="Ingrese el Equipo"
+                    android:hint="Seleccione el Tipo de Falla"
                     android:inputType="textPersonName"
                     android:paddingStart="10dp"
                     android:textSize="14sp"
@@ -162,7 +164,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/abril_fatface"
-                    android:text="Tipo"
+                    android:text="Cod. Equipo"
                     android:textColor="@color/principal"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -181,7 +183,7 @@
                     android:drawablePadding="10dp"
                     android:ems="10"
                     android:fontFamily="@font/arimo"
-                    android:hint="Ingrese el Tipo de Falla"
+                    android:hint="Ingrese el Cod. Equipo"
                     android:inputType="textPersonName"
                     android:paddingStart="10dp"
                     android:textSize="14sp"
@@ -279,7 +281,7 @@
                 <EditText
                     android:id="@+id/txtFotoFalla"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/custom_imput"
@@ -318,13 +320,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:contentDescription="TODO"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnFotoFalla"
                     tools:ignore="ImageContrastCheck"
-                    tools:srcCompat="@tools:sample/avatars"
-                    android:contentDescription="TODO" />
+                    tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/lblUbicacionEquipo"

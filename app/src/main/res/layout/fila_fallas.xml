@@ -16,83 +16,96 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/background_lista"
             android:layout_margin="1dp"
+            android:background="@drawable/background_lista"
             android:padding="12dp">
 
             <TextView
                 android:id="@+id/filaFechaFalla"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_width="107dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="20dp"
                 android:fontFamily="@font/arimo"
                 android:padding="5dp"
                 android:text="Fecha"
                 android:textAlignment="center"
+                android:textColor="@color/princilap_dark"
                 android:textSize="10sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.118" />
+                app:layout_constraintVertical_bias="0.207" />
 
             <TextView
                 android:id="@+id/filaUnidadFalla"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="111dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/arimo"
                 android:padding="5dp"
                 android:text="Unidad Falla"
                 android:textAlignment="center"
                 android:textSize="10sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toBottomOf="@+id/filaFechaFalla"
-                app:layout_constraintVertical_bias="0.48" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/filaEquipoFalla"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="105dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/arimo"
                 android:padding="5dp"
                 android:text="Equipo "
-                android:textAlignment="center"
-                android:textSize="10sp"
+                android:textAlignment="gravity"
+                android:textSize="12dp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnEditarFalla"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/filaUnidadFalla"
-                app:layout_constraintTop_toBottomOf="@+id/filaFechaFalla" />
+                app:layout_constraintTop_toBottomOf="@+id/filaTipoFalla"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/filaTipoFalla"
-                android:layout_width="wrap_content"
+                android:layout_width="105dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/arimo"
                 android:padding="5dp"
                 android:text="Tipo de Falla"
-                android:textAlignment="center"
-                android:textSize="10sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/filaEquipoFalla"
-                app:layout_constraintTop_toBottomOf="@+id/filaFechaFalla" />
+                android:textAlignment="gravity"
+                android:textColor="@color/principal"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/filaEquipoFalla"
+                app:layout_constraintEnd_toStartOf="@+id/btnEditarFalla"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toEndOf="@+id/filaFechaFalla"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/btnEditarFalla"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnEliminaFalla"
+                app:layout_constraintStart_toEndOf="@+id/filaEquipoFalla"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.884"
+                app:layout_constraintVertical_bias="0.548"
                 app:srcCompat="@drawable/ic_editar"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -100,14 +113,26 @@
                 android:id="@+id/btnEliminaFalla"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.884"
+                app:layout_constraintVertical_bias="0.564"
                 app:srcCompat="@drawable/ic_eliminar"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="59dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/filaUnidadFalla"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.447"
+                app:srcCompat="@drawable/ic_baseline_bus_alert_24" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

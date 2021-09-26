@@ -196,14 +196,4 @@
         app:layout_constraintTop_toBottomOf="@+id/imgMenOp4"
         app:srcCompat="@drawable/ic_repuestos"
         android:contentDescription="TODO" />
-
-    <Button
-        android:id="@+id/btnHide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCerrarSesion" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,6 +66,7 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_detalle_equipo.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_fallas.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos2.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_inicio.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_main.xml" value="0.5" />
@@ -80,8 +81,9 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_visor_video.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.30694444444444446" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_equipo.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.33" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_solicitud_repuesto.xml" value="0.1" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.22962962962962963" />
@@ -126,7 +128,6 @@
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/drawable/ic_foto_falla_bl.xml" value="0.38125" />
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/drawable/ic_save.xml" value="0.38125" />
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/layout/activity_fallas.xml" value="0.3651041666666667" />
-        <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/layout/activity_mapa.xml" value="0.21" />
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/layout/activity_noticias.xml" value="0.3651041666666667" />
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/layout/activity_registrar_noticias.xml" value="0.33" />
         <entry key="..\:/trabajofinal/AppSISROB/app/src/main/res/layout/activity_registro_fallas.xml" value="0.33" />
