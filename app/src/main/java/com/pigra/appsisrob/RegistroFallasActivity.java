@@ -186,37 +186,37 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
         }
         if(txtUnidadMinera.getText().toString().equals(""))
         {
-            txtUnidadMinera.setError("Ingrese fecha");
+            txtUnidadMinera.setError("Ingrese Unidad Minera");
             return;
         }
         if(txtEquipoFalla.getText().toString().equals(""))
         {
-            txtEquipoFalla.setError("Ingrese fecha");
+            txtEquipoFalla.setError("Ingrese Equipo");
             return;
         }
         if(txtTipoFalla.getText().toString().equals(""))
         {
-            txtTipoFalla.setError("Ingrese fecha");
+            txtTipoFalla.setError("Ingrese Tipo de Falla");
             return;
         }
         if(txtSistemaFalla.getText().toString().equals(""))
         {
-            txtSistemaFalla.setError("Ingrese fecha");
+            txtSistemaFalla.setError("Ingrese Sistema");
             return;
         }
         if(txtObservacionFalla.getText().toString().equals(""))
         {
-            txtObservacionFalla.setError("Ingrese fecha");
+            txtObservacionFalla.setError("Ingrese Observación");
             return;
         }
         if(txtFotoFalla.getText().toString().equals(""))
         {
-            txtFotoFalla.setError("Ingrese fecha");
+            txtFotoFalla.setError("Ingrese Descripción de la Foto");
             return;
         }
         if(txtUbicacionFalla.getText().toString().equals(""))
         {
-            txtUbicacionFalla.setError("Ingrese fecha");
+            txtUbicacionFalla.setError("Ingrese Ubicación");
             return;
         }
 
