@@ -13,21 +13,24 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.pigra.appsisrob.entidades.Almacen;
 import com.pigra.appsisrob.entidades.SolicitudRepuesto;
+import com.pigra.appsisrob.entidades.UsuarioOpcion;
 import com.pigra.appsisrob.entidades.Video;
 import com.pigra.appsisrob.fragmets.DatePickerFragment;
 import com.pigra.appsisrob.modelo.DAOSolicitudRepuesto;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class RegistroSolicitud extends AppCompatActivity {
-    TextView txtRegCodigo;
+    TextView txtRegCodigo, lblAlmacen;
     EditText txtRegFechaSol, txtRegCantidad, txtRegSolDescripcion;
-    Button btnRegSolRep;
+    Button btnRegSolRep, btnMapaAlmacen;
 
     SolicitudRepuesto solicitud ;
 
@@ -58,6 +61,8 @@ public class RegistroSolicitud extends AppCompatActivity {
         txtRegCantidad = findViewById(R.id.txtRegCantidad);
         txtRegSolDescripcion = findViewById(R.id.txtRegSolDescripcion);
         btnRegSolRep   = findViewById(R.id.btnRegSolRep);
+        btnMapaAlmacen = findViewById(R.id.btnMapaAlmacen);
+        lblAlmacen = findViewById(R.id.lblAlmacen);
 
         btnRegSolRep.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,20 +83,41 @@ public class RegistroSolicitud extends AppCompatActivity {
         txtRegFechaSol.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-
                 if (b)
                 {
                     showDatePickerDialog();
                 }
             }
         });
+
+        btnMapaAlmacen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abriMapa();
+            }
+        });
     }
+
+    private void abriMapa() {
+        Intent intent = new Intent( this,MapaActivity.class);
+        intent.putExtra("tipoMapa", "REPUESTO");
+        startActivityForResult(intent,1);
+    }
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK) {
+                lblAlmacen.setText(data.getStringExtra("nombreAlmacen"));
+                stock = Integer.parseInt(data.getStringExtra("stockAlmacen"));
+            }
+        }
+    }
+
     private void showDatePickerDialog() {
 
         DatePickerFragment newFragment = DatePickerFragment.newInstance(new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                // +1 because January is zero
                 final String selectedDate = String.format("%02d", day)   + "/" + String.format("%02d",(month+1)) + "/" + year;
                 txtRegFechaSol.setText(selectedDate);
             }
@@ -141,6 +167,10 @@ public class RegistroSolicitud extends AppCompatActivity {
             txtRegCantidad.setError("Cantidad obligatoria");
             return false;
         }
+        if(stock==null){
+            lblAlmacen.setError("Seleccione Almacen");
+            return false;
+        }
 
         solicitud = new SolicitudRepuesto();
         if(actualizar)
@@ -158,7 +188,7 @@ public class RegistroSolicitud extends AppCompatActivity {
         solicitud.setDescripcion(txtRegSolDescripcion.getText().toString());
         solicitud.setCantidad(Integer.parseInt(txtRegCantidad.getText().toString()));
         solicitud.setCategoria(1);
-        solicitud.setStock(100);
+        solicitud.setStock(stock);
 
         return true;
     }
