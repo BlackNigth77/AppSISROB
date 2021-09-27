@@ -170,7 +170,6 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
                     }
                 });
 
-
                 btnGrabarEquipo = findViewById(R.id.btnGrabarEquipo);
                 btnGrabarEquipo.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -189,43 +188,50 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
         foto = txtFotoFalla.getText().toString();
         ubicacionFalla = txtUbicacionFalla.getText().toString();
 
+        if(!fechaFalla.isEmpty() &&
+                !unidadMinera.isEmpty() &&
+                !equipoFalla.isEmpty() &&
+                !tipoFalla.isEmpty() &&
+                !sistemaFalla.isEmpty() &&
+                !observacionFalla.isEmpty() &&
+                !foto.isEmpty() &&
+                !ubicacionFalla.isEmpty()){
 
-        if (registrar == true) {
+                    if (registrar == true) {
+                        ReporteFalla rf = new ReporteFalla();
+                        rf.setId(UUID.randomUUID().toString());
+                        rf.setFecha(fechaFalla);
+                        rf.setUnidad_minera(unidadMinera);
+                        rf.setEquipo(equipoFalla);
+                        rf.setTipo(tipoFalla);
+                        rf.setSistema(sistemaFalla);
+                        rf.setObservacion(observacionFalla);
+                        rf.setFoto(foto);
+                        rf.setUbicacion(ubicacionFalla);
+                        dbReference.child("ReporteFalla").child(rf.getId()).setValue(rf);
+                        Toast.makeText(this,"Falla Registrada",Toast.LENGTH_SHORT).show();
 
-            ReporteFalla rf = new ReporteFalla();
-            rf.setId(UUID.randomUUID().toString());
-            rf.setFecha(fechaFalla);
-            rf.setUnidad_minera(unidadMinera);
-            rf.setEquipo(equipoFalla);
-            rf.setTipo(tipoFalla);
-            rf.setSistema(sistemaFalla);
-            rf.setObservacion(observacionFalla);
-            rf.setFoto(foto);
-            rf.setUbicacion(ubicacionFalla);
-            dbReference.child("ReporteFalla").child(rf.getId()).setValue(rf);
-            Toast.makeText(this,"Falla Registrada",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
+                        startActivity(intent);
+                    }else{
 
-            Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
-            startActivity(intent);
+                        HashMap map = new HashMap();
+                        map.put("fecha", fechaFalla);
+                        map.put("unidad_minera", unidadMinera);
+                        map.put("equipo", equipoFalla);
+                        map.put("tipo", tipoFalla);
+                        map.put("sistema", sistemaFalla);
+                        map.put("observacion", observacionFalla);
+                        map.put("foto", foto);
+                        map.put("ubicacion", ubicacionFalla);
+                        dbReference.child("ReporteFalla").child(id).updateChildren(map);
+                        Toast.makeText(this,"Falla actualizada",Toast.LENGTH_SHORT).show();
 
-        }else{
-
-
-
-            HashMap map = new HashMap();
-            map.put("fecha", fechaFalla);
-            map.put("unidad_minera", unidadMinera);
-            map.put("equipo", equipoFalla);
-            map.put("tipo", tipoFalla);
-            map.put("sistema", sistemaFalla);
-            map.put("observacion", observacionFalla);
-            map.put("foto", foto);
-            map.put("ubicacion", ubicacionFalla);
-            dbReference.child("ReporteFalla").child(id).updateChildren(map);
-            Toast.makeText(this,"Falla actualizada",Toast.LENGTH_SHORT).show();
-
-            Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
-            startActivity(intent);
+                        Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
+                        startActivity(intent);
+                    }
+        } else {
+            Toast.makeText(this,"¡Debe completar todos los campos!",Toast.LENGTH_SHORT).show();
         }
     }
 
