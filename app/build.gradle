@@ -59,4 +59,8 @@ dependencies {
     //MAps
     implementation 'com.google.android.gms:play-services-maps:17.0.1'
     implementation 'com.google.android.gms:play-services-location:18.0.0'
+    //Servicios
+    implementation 'com.android.volley:volley:1.2.1'
+    //mail
+    //implementation  'javax.mail:javax.mail-api:1.5.3'
 }

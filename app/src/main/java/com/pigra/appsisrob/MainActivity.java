@@ -51,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
         List<UsuarioOpcion> lstOpcion = new ArrayList<>();
 
+        txtUsuario.setText( "Bienvenido(a): "  +  globalVariable.getUsuario().getNombre() + " " + globalVariable.getUsuario().getApellido() );
         if (globalVariable.getOpciones()==null)
         {
-            txtUsuario.setText( "Bienvenido(a): "  +  globalVariable.getUsuario().getNombre() + " " + globalVariable.getUsuario().getApellido() );
             String urlOpcion = "http://pruebaupc.atwebpages.com/index.php/opciones/" + dni ;
             Log.d("==>","envía");
             StringRequest peticion = new StringRequest(Request.Method.GET, urlOpcion,
@@ -210,6 +210,9 @@ public class MainActivity extends AppCompatActivity {
         txtMenuPrinOp6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final SesionGlobal globalVariable = (SesionGlobal) getApplicationContext();
+                globalVariable.setOpciones(null);
+                globalVariable.setUsuario(null);
                 finish();
             }
         });
@@ -219,6 +222,9 @@ public class MainActivity extends AppCompatActivity {
         ImgPrinOp6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final SesionGlobal globalVariable = (SesionGlobal) getApplicationContext();
+                globalVariable.setOpciones(null);
+                globalVariable.setUsuario(null);
                 finish();
             }
         });
