@@ -19,7 +19,7 @@ public class FiltroCargadorActivity extends AppCompatActivity {
     ImageView ImageEquipo;
     DAOEquipo daoEquipo = new DAOEquipo(this);
     List<Equipo> listaEquipos = new ArrayList<>();
-    AdaptadorEquipos adaptador;
+    AdaptadorCargador adaptador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class FiltroCargadorActivity extends AppCompatActivity {
 
     private void mostrarEquiposCar(){
         listaEquipos = daoEquipo.getAllEquiposCar();
-        adaptador= new AdaptadorEquipos(this,listaEquipos);
+        adaptador= new AdaptadorCargador(this,listaEquipos);
         recyclerFiltroCar.setAdapter(adaptador);
         recyclerFiltroCar.setLayoutManager(new LinearLayoutManager(this));
     }

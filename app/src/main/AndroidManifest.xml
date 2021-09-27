@@ -21,8 +21,21 @@
         android:theme="@style/Theme.AppSISROB"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".VisorPdfActivity"
+            android:name=".StockUMActivity"
             android:exported="true" />
+        <activity
+            android:name=".FlotaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VisorPdfPartes"
+            android:exported="true" />
+        <activity
+            android:name=".VisorPdfTablero"
+            android:exported="true" />
+        <activity
+            android:name=".VisorPdfActivity"
+            android:exported="true"
+            />
         <activity
             android:name=".FiltrorBusActivity"
             android:exported="true"
@@ -145,6 +158,13 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppSISROBDet" />
+
+        <service android:name=".MyFirebaseMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
 
         <meta-data
             android:name="preloaded_fonts"

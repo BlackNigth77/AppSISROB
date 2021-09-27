@@ -7,7 +7,8 @@ import android.widget.ProgressBar;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class VisorPdfActivity extends AppCompatActivity {
+
+public class VisorPdfTablero extends AppCompatActivity {
 
     ProgressBar progressBar;
     PDFView pdfView ;
@@ -15,11 +16,12 @@ public class VisorPdfActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visor_pdf);
+        setContentView(R.layout.activity_visor_pdf_tablero);
+
         pdfView = findViewById(R.id.pdfView);
         progressBar = findViewById(R.id.progressBar);
 
-        String urlPdf = "http://hts-mining.com/wp-content/uploads/2015/04/Alpha-20-TDS-EN-100063006-1.pdf";
+        String urlPdf = "http://sifamtinsley.co.uk/wp/downloads/datasheets/multifunctionmeters/Alpha20.pdf";
         new RecibirPdfStrem(pdfView,progressBar).execute(urlPdf);
 
     }

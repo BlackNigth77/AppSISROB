@@ -19,7 +19,7 @@ public class FiltroRobotActivity extends AppCompatActivity {
     ImageView ImageEquipo;
     DAOEquipo daoEquipo = new DAOEquipo(this);
     List<Equipo> listaEquipos = new ArrayList<>();
-    AdaptadorEquipos adaptador;
+    AdaptadorRobot adaptador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class FiltroRobotActivity extends AppCompatActivity {
 
     private void mostrarEquiposRob(){
         listaEquipos = daoEquipo.getAllEquiposRob();
-        adaptador= new AdaptadorEquipos(this,listaEquipos);
+        adaptador= new AdaptadorRobot(this,listaEquipos);
         recyclerFiltroRob.setAdapter(adaptador);
         recyclerFiltroRob.setLayoutManager(new LinearLayoutManager(this));
     }

@@ -7,7 +7,8 @@ import android.widget.ProgressBar;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class VisorPdfActivity extends AppCompatActivity {
+public class VisorPdfPartes extends AppCompatActivity {
+
 
     ProgressBar progressBar;
     PDFView pdfView ;
@@ -15,11 +16,12 @@ public class VisorPdfActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visor_pdf);
+        setContentView(R.layout.activity_visor_pdf_partes);
+
         pdfView = findViewById(R.id.pdfView);
         progressBar = findViewById(R.id.progressBar);
 
-        String urlPdf = "http://hts-mining.com/wp-content/uploads/2015/04/Alpha-20-TDS-EN-100063006-1.pdf";
+        String urlPdf = "https://www.hatz-diesel.com/fileadmin/user_upload/hatz-diesel.com/download/Dokumentationen/1609_Taschenkarte_70030727_alteM.pdf";
         new RecibirPdfStrem(pdfView,progressBar).execute(urlPdf);
 
     }
