@@ -179,14 +179,47 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
                 });
     }
     private void registrar(){
-        fechaFalla = txtFechaFalla.getText().toString();
-        unidadMinera = txtUnidadMinera.getText().toString();
-        equipoFalla = txtEquipoFalla.getText().toString();
-        tipoFalla = txtTipoFalla.getText().toString();
-        sistemaFalla = txtSistemaFalla.getText().toString();
-        observacionFalla = txtObservacionFalla.getText().toString();
-        foto = txtFotoFalla.getText().toString();
-        ubicacionFalla = txtUbicacionFalla.getText().toString();
+        if(txtFechaFalla.getText().toString().equals(""))
+        {
+            txtFechaFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtUnidadMinera.getText().toString().equals(""))
+        {
+            txtUnidadMinera.setError("Ingrese fecha");
+            return;
+        }
+        if(txtEquipoFalla.getText().toString().equals(""))
+        {
+            txtEquipoFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtTipoFalla.getText().toString().equals(""))
+        {
+            txtTipoFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtSistemaFalla.getText().toString().equals(""))
+        {
+            txtSistemaFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtObservacionFalla.getText().toString().equals(""))
+        {
+            txtObservacionFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtFotoFalla.getText().toString().equals(""))
+        {
+            txtFotoFalla.setError("Ingrese fecha");
+            return;
+        }
+        if(txtUbicacionFalla.getText().toString().equals(""))
+        {
+            txtUbicacionFalla.setError("Ingrese fecha");
+            return;
+        }
+
 
         if(!fechaFalla.isEmpty() &&
                 !unidadMinera.isEmpty() &&
