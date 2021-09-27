@@ -8,20 +8,20 @@ import android.util.Log;
 
 import com.pigra.appsisrob.entidades.SolicitudRepuesto;
 import com.pigra.appsisrob.utilitarios.Constantes;
-import com.pigra.appsisrob.utilitarios.ConeccionDB;
+import com.pigra.appsisrob.utilitarios.SolicitudRepuestoDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class DAOSolicitudRepuesto {
-    ConeccionDB solicitudRepuestoDB;
+    SolicitudRepuestoDB solicitudRepuestoDB;
     SQLiteDatabase db;
     private Context context;
 
     public DAOSolicitudRepuesto(Context context) {
         this.context = context;
-        solicitudRepuestoDB = new ConeccionDB(context);
+        solicitudRepuestoDB = new SolicitudRepuestoDB(context);
     }
     public void abrirBD(){
         db = solicitudRepuestoDB.getWritableDatabase() ;
@@ -99,7 +99,7 @@ public class DAOSolicitudRepuesto {
             if (resultado==-1)
                 rspta = "Error al eliminar";
             else
-                rspta ="Se eliminó correctamente";
+                rspta ="Se eliminó correctamente la solicitud";
         }
         catch (Exception ex){
             rspta = ex.getMessage();

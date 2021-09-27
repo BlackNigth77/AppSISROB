@@ -67,11 +67,11 @@ public class AdaptadorSolicitudRepuesto extends RecyclerView.Adapter<AdaptadorSo
                 ventana.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        DAOSolicitudRepuesto daoRepuesto= new DAOSolicitudRepuesto(context);
-                        daoRepuesto.abrirBD();
-                        String resultado = "";// daoRepuesto.eliminarSolicitud(listaSolicitudes.get(position).getId());
+                        DAOSolicitudRepuesto daoSolicitudRepuesto= new DAOSolicitudRepuesto(context);
+                        daoSolicitudRepuesto.abrirBD();
+                        String resultado = daoSolicitudRepuesto.eliminarSolicitud(listaSolicitudes.get(position).getId());
                         AlertDialog.Builder wnd = new AlertDialog.Builder(context);
-                        wnd.setTitle("Confirmación");
+                        wnd.setTitle("Información!");
                         wnd.setMessage(resultado);
                         wnd.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                             @Override
@@ -83,6 +83,7 @@ public class AdaptadorSolicitudRepuesto extends RecyclerView.Adapter<AdaptadorSo
                         wnd.create().show();
                     }
                 });
+                ventana.setNegativeButton("No",null);
                 ventana.create().show();
             }
         });

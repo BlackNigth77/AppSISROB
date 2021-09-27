@@ -57,10 +57,59 @@ public class MenuEquipos extends AppCompatActivity {
             }
         });
 
+        txtRobot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltroRobotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imgMenEqOp2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltroRobotActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtCargador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltroCargadorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imgMenEqOp3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltroCargadorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtCamion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltrorBusActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imgMenEqOp4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( MenuEquipos.this,FiltrorBusActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         btnRegistrarEquipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuEquipos.this,ActivityFiltroEquipos.class);
+                Intent intent = new Intent(MenuEquipos.this,RegistrarEquipoActivity.class);
                 startActivity(intent);
             }
         });

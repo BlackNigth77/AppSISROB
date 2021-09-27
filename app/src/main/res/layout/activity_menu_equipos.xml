@@ -24,11 +24,10 @@
     <TextView
         android:id="@+id/txtUsuarioMnEq"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="10dp"
         android:background="#FFFFFF"
         android:fontFamily="@font/arimo"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/bienvenido_a"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

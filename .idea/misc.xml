@@ -63,10 +63,14 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_usuario_prin.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ic_va_recupera.xml" value="0.1962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/drawable/ico_detequ_descripcion.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/font/.xml" value="0.1265625" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_detalle_equipo.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_fallas.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_cargador.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_equipos2.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtro_robot.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_filtror_bus.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_inicio.xml" value="0.2" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_main.xml" value="0.5" />
@@ -77,15 +81,18 @@
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registrar_noticias.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registrar_videos.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registro_fallas.xml" value="0.25" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_registro_solicitud.xml" value="0.19074074074074074" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_repuestos.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_val_recup_psw.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_visor_pdf.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/activity_visor_video.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_equipo.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_equipo.xml" value="0.5" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_fallas.xml" value="0.33" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_noticias.xml" value="0.33" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_repuestos.xml" value="0.25" />
-        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_solicitud_repuesto.xml" value="0.1" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_robot.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_solicitud_repuesto.xml" value="0.25" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fila_videos.xml" value="0.22962962962962963" />
         <entry key="..\:/AndroidProyJava/AppSISROB/app/src/main/res/layout/fragment_date_picker.xml" value="0.1" />
         <entry key="..\:/srcAndroid/AppSISROB-master/app/src/main/res/layout/activity_detalle_equipo.xml" value="0.3307291666666667" />

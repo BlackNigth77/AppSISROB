@@ -128,13 +128,13 @@ public class RegistroSolicitud extends AppCompatActivity {
     private void verificarEdicion() {
 
         if(getIntent().hasExtra("id")){
-             id= Integer.parseInt(getIntent().getStringExtra("id"));
-             codigo= getIntent().getStringExtra("codigo");
-             fecha= getIntent().getStringExtra("fecha");
-             descripcion= getIntent().getStringExtra("descripcion");
-             //stock= Integer.parseInt(getIntent().getStringExtra("stock"));
-             cantidad= Integer.parseInt(getIntent().getStringExtra("cantidad"));
-             //categoria= Integer.parseInt(getIntent().getStringExtra("categoria"));
+            id= Integer.parseInt(getIntent().getStringExtra("id"));
+            codigo= getIntent().getStringExtra("codigo");
+            fecha= getIntent().getStringExtra("fecha");
+            descripcion= getIntent().getStringExtra("descripcion");
+            //stock= Integer.parseInt(getIntent().getStringExtra("stock"));
+            cantidad= Integer.parseInt(getIntent().getStringExtra("cantidad"));
+            //categoria= Integer.parseInt(getIntent().getStringExtra("categoria"));
 
             actualizar = true;
 

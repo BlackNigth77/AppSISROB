@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,10 +24,11 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyVi
     private Context context;
     private List<Equipo> listaEquipos = new ArrayList<>();
 
-    public AdaptadorEquipos (Context context,List<Video> listaVideos){
+    public AdaptadorEquipos (Context context,List<Equipo> listaEquipos){
         this.context= context ;
         this.listaEquipos =listaEquipos;
     }
+
 
     @NonNull
     @Override
@@ -42,17 +44,19 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyVi
     @Override
     public void onBindViewHolder(@NonNull AdaptadorEquipos.MyViewHodler holder, int position) {
 
+
         holder.filaMarca.setText(listaEquipos.get(position).getMarca()+"");
         holder.filaModelo.setText(listaEquipos.get(position).getModelo()+"");
+        holder.filaTipo.setText(listaEquipos.get(position).getTipo()+"");
 
 
         holder.btnEditarEquipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(context, VisorVideoActivity.class);
+                Intent intent= new Intent(context, DetalleEquipoActivity.class);
                 intent.putExtra("id", listaEquipos.get(position).getId()+"");
                 intent.putExtra("marca", listaEquipos.get(position).getMarca()+"");
-                intent.putExtra("modelo", listaEquipos.get(position).getModelo()+"");
+                intent.putExtra("tipo", listaEquipos.get(position).getTipo()+"");
                 context.startActivity(intent);
             }
         });
@@ -68,14 +72,19 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyVi
 
     public class MyViewHodler extends RecyclerView.ViewHolder {
 
-        TextView filaMarca, filaModelo;
+        TextView filaMarca, filaModelo,filaTipo;
         ImageButton btnEditarEquipo;
+        ImageView ImageEquipo;
 
         public MyViewHodler (@NonNull View itemView) {
             super(itemView);
             filaMarca = itemView.findViewById(R.id.filaMarca);
-            filaModelo = itemView.findViewById(R.id.filaModelo);
+            filaModelo = itemView.findViewById(R.id.filaModelos);
+            filaTipo = itemView.findViewById(R.id.filaTipo);
             btnEditarEquipo = itemView.findViewById(R.id.btnEditarEquipo);
+
+            ImageEquipo = itemView.findViewById(R.id.ImgEquipo);
+            ImageEquipo.setImageResource(R.drawable.eqmixer);
 
 
         }
