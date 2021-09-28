@@ -60,7 +60,7 @@ public class DAOEquipo {
         List<Equipo> lstEquipos = new ArrayList<>();
         try
         {
-            Cursor cursor = db1.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA5 +" WHERE tipo = 'MIXER' ",null);
+            Cursor cursor = db1.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA5 +" WHERE tipo='MIXER'" ,null);
             while (cursor.moveToNext())
             {
                 lstEquipos.add(new Equipo(cursor.getInt(0),
@@ -79,6 +79,74 @@ public class DAOEquipo {
         return lstEquipos;
     }
 
+    public List<Equipo> getAllEquiposRob(){
+        List<Equipo> lstEquipos = new ArrayList<>();
+        try
+        {
+            Cursor cursor = db1.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA5 +" WHERE tipo='ROBOT'" ,null);
+            while (cursor.moveToNext())
+            {
+                lstEquipos.add(new Equipo(cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4),
+                        cursor.getInt(5)));
+            }
+
+        }
+        catch(Exception e)
+        {
+            Log.d("=>",e.getMessage());
+        }
+        return lstEquipos;
+    }
+
+    public List<Equipo> getAllEquiposCar(){
+        List<Equipo> lstEquipos = new ArrayList<>();
+        try
+        {
+            Cursor cursor = db1.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA5 +" WHERE tipo='CARGADOR'" ,null);
+            while (cursor.moveToNext())
+            {
+                lstEquipos.add(new Equipo(cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4),
+                        cursor.getInt(5)));
+            }
+
+        }
+        catch(Exception e)
+        {
+            Log.d("=>",e.getMessage());
+        }
+        return lstEquipos;
+    }
+
+    public List<Equipo> getAllEquiposBus(){
+        List<Equipo> lstEquipos = new ArrayList<>();
+        try
+        {
+            Cursor cursor = db1.rawQuery("SELECT * FROM " + Constantes.NOMBRE_TABLA5 +" WHERE tipo='BUS'" ,null);
+            while (cursor.moveToNext())
+            {
+                lstEquipos.add(new Equipo(cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4),
+                        cursor.getInt(5)));
+            }
+
+        }
+        catch(Exception e)
+        {
+            Log.d("=>",e.getMessage());
+        }
+        return lstEquipos;
+    }
 
 }
 

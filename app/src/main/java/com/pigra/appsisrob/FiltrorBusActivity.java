@@ -10,40 +10,38 @@ import android.widget.ImageView;
 import com.pigra.appsisrob.entidades.Equipo;
 import com.pigra.appsisrob.modelo.DAOEquipo;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActivityFiltroEquipos extends AppCompatActivity {
+public class FiltrorBusActivity extends AppCompatActivity {
 
-    RecyclerView recyclerFiltroEq;
+    RecyclerView recyclerFiltroBus;
     ImageView ImageEquipo;
     DAOEquipo daoEquipo = new DAOEquipo(this);
     List<Equipo> listaEquipos = new ArrayList<>();
-    AdaptadorEquipos adaptador;
+    AdaptadorBus adaptador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_filtro_equipos);
-
+        setContentView(R.layout.activity_filtror_bus);
 
         asignarReferencias();
         daoEquipo.abrirBD();
-        mostrarEquipos();
+        mostrarEquiposBus();
+
     }
 
-    private void mostrarEquipos(){
-        listaEquipos = daoEquipo.getAllEquipos();
-        adaptador= new AdaptadorEquipos(this,listaEquipos);
-        recyclerFiltroEq.setAdapter(adaptador);
-        recyclerFiltroEq.setLayoutManager(new LinearLayoutManager(this));
+    private void mostrarEquiposBus(){
+        listaEquipos = daoEquipo.getAllEquiposBus();
+        adaptador= new AdaptadorBus(this,listaEquipos);
+        recyclerFiltroBus.setAdapter(adaptador);
+        recyclerFiltroBus.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void asignarReferencias(){
 
-        recyclerFiltroEq = findViewById(R.id.recyclerFiltroEq);
+        recyclerFiltroBus = findViewById(R.id.recyclerFiltroBus);
 
     }
-
 }

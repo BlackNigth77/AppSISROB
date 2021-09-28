@@ -13,18 +13,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pigra.appsisrob.entidades.Equipo;
-import com.pigra.appsisrob.entidades.Video;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyViewHodler> {
+public class AdaptadorBus  extends RecyclerView.Adapter<AdaptadorBus.MyViewHodler>  {
 
     private Context context;
     private List<Equipo> listaEquipos = new ArrayList<>();
 
-    public AdaptadorEquipos (Context context,List<Equipo> listaEquipos){
+    public AdaptadorBus (Context context,List<Equipo> listaEquipos){
         this.context= context ;
         this.listaEquipos =listaEquipos;
     }
@@ -32,17 +30,17 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyVi
 
     @NonNull
     @Override
-    public AdaptadorEquipos.MyViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AdaptadorBus.MyViewHodler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.fila_equipo, parent,false);
 
-        return new AdaptadorEquipos.MyViewHodler(view);
+        return new AdaptadorBus.MyViewHodler(view);
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull AdaptadorEquipos.MyViewHodler holder, int position) {
+    public void onBindViewHolder(@NonNull AdaptadorBus.MyViewHodler holder, int position) {
 
 
         holder.filaMarca.setText(listaEquipos.get(position).getMarca()+"");
@@ -85,7 +83,7 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyVi
 
 
             ImageEquipo = itemView.findViewById(R.id.ImgEquipo);
-            ImageEquipo.setImageResource(R.drawable.eqmixer);
+            ImageEquipo.setImageResource(R.drawable.eqbus);
 
 
         }
