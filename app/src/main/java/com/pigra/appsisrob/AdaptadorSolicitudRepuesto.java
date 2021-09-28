@@ -69,7 +69,7 @@ public class AdaptadorSolicitudRepuesto extends RecyclerView.Adapter<AdaptadorSo
                     public void onClick(DialogInterface dialogInterface, int i) {
                         DAOSolicitudRepuesto daoRepuesto= new DAOSolicitudRepuesto(context);
                         daoRepuesto.abrirBD();
-                        String resultado = "";// daoRepuesto.eliminarSolicitud(listaSolicitudes.get(position).getId());
+                        String resultado = daoRepuesto.eliminarSolicitud(listaSolicitudes.get(position).getId());
                         AlertDialog.Builder wnd = new AlertDialog.Builder(context);
                         wnd.setTitle("Confirmación");
                         wnd.setMessage(resultado);

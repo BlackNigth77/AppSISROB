@@ -220,15 +220,22 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
             return;
         }
 
-
-        if(!fechaFalla.isEmpty() &&
-                !unidadMinera.isEmpty() &&
-                !equipoFalla.isEmpty() &&
-                !tipoFalla.isEmpty() &&
-                !sistemaFalla.isEmpty() &&
-                !observacionFalla.isEmpty() &&
-                !foto.isEmpty() &&
-                !ubicacionFalla.isEmpty()){
+        fechaFalla = txtFechaFalla.getText().toString();
+        unidadMinera = txtUnidadMinera.getText().toString();
+        equipoFalla = txtEquipoFalla.getText().toString();
+        tipoFalla = txtTipoFalla.getText().toString();
+        sistemaFalla = txtSistemaFalla.getText().toString();
+        observacionFalla = txtObservacionFalla.getText().toString();
+        foto = txtFotoFalla.getText().toString();
+        ubicacionFalla = txtUbicacionFalla.getText().toString();
+        //if(!fechaFalla.isEmpty() &&
+        //        !unidadMinera.isEmpty() &&
+        //        !equipoFalla.isEmpty() &&
+        //        !tipoFalla.isEmpty() &&
+        //        !sistemaFalla.isEmpty() &&
+        //        !observacionFalla.isEmpty() &&
+        //        !foto.isEmpty() &&
+        //        !ubicacionFalla.isEmpty()){
 
                     if (registrar == true) {
                         ReporteFalla rf = new ReporteFalla();
@@ -263,9 +270,9 @@ public class RegistroFallasActivity extends AppCompatActivity implements View.On
                         Intent intent = new Intent(RegistroFallasActivity.this, FallasActivity.class);
                         startActivity(intent);
                     }
-        } else {
-            Toast.makeText(this,"¡Debe completar todos los campos!",Toast.LENGTH_SHORT).show();
-        }
+        //} else {
+        //    Toast.makeText(this,"¡Debe completar todos los campos!",Toast.LENGTH_SHORT).show();
+        //}
     }
 
     private void inicializarFirebase(){
